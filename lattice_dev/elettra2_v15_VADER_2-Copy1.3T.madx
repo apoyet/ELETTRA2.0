@@ -529,3 +529,13 @@ flatten;
 endedit;
 
 
+
+!++++++++++++++ CALL OPTICS ++++++++++++++!
+
+call, file=optics_elettra2_v15_VADER_2.3T.madx;
+
+
+use, sequence=ring;
+emit, deltap=0.0095;
+
+stop;
