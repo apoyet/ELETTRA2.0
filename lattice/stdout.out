@@ -3,7 +3,7 @@
   +     MAD-X 5.07.00  (64 bit, Darwin)      +
   + Support: mad@cern.ch, http://cern.ch/mad +
   + Release   date: 2021.05.03               +
-  + Execution date: 2021.09.21 14:37:37      +
+  + Execution date: 2021.09.28 08:13:32      +
   ++++++++++++++++++++++++++++++++++++++++++++
 !One achromat of the S6BA-E lattice of Elettra 2.0 created by Emanuel Karantzoulis D.Phil.
 
@@ -1229,9 +1229,24 @@ enter Twiss module
 
            synch_6            synch_8             nflips 
                  0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
 
-  Number of warnings: 6
-5 in C and 1 in Fortran
+ C                259.2000005 m          f0               1.156606593 MHz
+ T0              0.8645982187 musecs     alfa         7.623498713e-05 
+ eta          7.618973982e-05            gamma(tr)        114.5309424 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       7.238025446e-08
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+
+  Number of warnings: 7
+6 in C and 1 in Fortran
 
   ++++++++++++++++++++++++++++++++++++++++++++
   +          MAD-X finished normally         +
@@ -1246,3 +1261,29 @@ orbit:  -6.452241E-07  1.935804E-06  0.000000E+00  0.000000E+00  2.572021E-02 -4
 iteration:   3 error:   1.301829E-09 deltap:   0.000000E+00
 orbit:  -6.452304E-07  1.935801E-06  0.000000E+00  0.000000E+00  2.572036E-02 -4.628259E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.532972 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.92082354          0.16940383          0.00205631
+                             damped                0.92082354          0.16940383          0.00205613
+ 
+ beta* [m]                   x                 0.71760049E+01      0.93959510E-42      0.47673039E-03
+                             y                 0.45724081E-32      0.11242748E+01      0.45986919E-32
+                             t                 0.22249684E-02      0.21774474E-31      0.15375515E+01
+ 
+ gamma* [1/m]                px                0.13935636E+00      0.51086523E-43      0.37908248E-07
+                             py                0.30862987E-34      0.88946338E+00      0.15370425E-31
+                             pt                0.82041045E-08      0.11838953E-32      0.65039031E+00
+ 
+ beta(max) [m]               x                 0.11793202E+02      0.23419630E-40      0.90430343E-03
+                             y                 0.78154383E-32      0.26322932E+02      0.47832652E-32
+                             t                 0.22771873E-02      0.54273392E-30      0.15375749E+01
+ 
+ gamma(max) [1/m]            px                0.11893985E+02      0.16506441E-40      0.38318415E-07
+                             py                0.78916355E-32      0.18511037E+02      0.15370425E-31
+                             pt                0.37590724E-02      0.38252550E-30      0.65039031E+00
+ 
+ Damping partition numbers                         1.46831811          1.00094473          1.53452681
+ Damping constants [1/s]                           0.18856851E+03      0.12854617E+03      0.19707136E+03
+ Damping times [s]                                 0.53031122E-02      0.77793063E-02      0.50743041E-02
+ Emittances [pi micro m]                       0.16473136E-03      0.80930107E-32      0.17434799E+01
