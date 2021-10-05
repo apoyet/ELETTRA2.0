@@ -11,7 +11,8 @@ parameters = {
 
 settings = {
 
-    'SAVE_FIGS'   : False,
+    'MAKE_PLOTS'  : False,
+    'SAVE_FIGS'   : True,
     'SAVE_TWISS'  : False
 
 }

@@ -1,100 +1,94 @@
+import elettra_toolbox
 import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-import scipy
+import seaborn as sns
+from config import parameters, settings
 from cpymad.madx import Madx
 from matplotlib import cm, gridspec, patches
+from pyhdtoolkit.cpymadtools.plotters import LatticePlotter
+from pyhdtoolkit.utils import defaults
 
-import xobjects as xo
-import xline as xl
-import xtrack as xt
-
-import elettra_toolbox
+defaults.config_logger()
+plt.rcParams.update({"text.usetex": False}) # Until LateX is back 
+sns.set_palette("pastel")
 
 
 # Launch MAD-X Session
-with open('stdout.out', 'w') as f:
+with open("stdout.out", "w") as f:
     madx = Madx(stdout=f)
     
     
 # Read parameters
-
-from config import parameters
-from config import settings
-
 for i in parameters.keys():
     madx.globals[i] = parameters[i]
+    
 
-
-# Call sequence and optics 
-
-madx.call('elettra2_v15_VADER_2.3T.madx');
-madx.call('optics_elettra2_v15_VADER_2.3T.madx');
+# Call sequence and optics
+madx.call("elettra2_v15_VADER_2.3T.madx")
+madx.call("optics_elettra2_v15_VADER_2.3T.madx");
 
 
 # Initial twiss
+madx.use(sequence="ring")
+madx.twiss(sequence="ring")
+init_twiss = madx.table.twiss.dframe().copy()
 
-madx.use(sequence='ring')
-madx.twiss(sequence='ring', table='init_twiss');
-init_twiss = madx.table.init_twiss.dframe()
-
-if settings['SAVE_TWISS']:
-    init_twiss.to_parquet('init_twiss.parquet')
+if settings["SAVE_TWISS"]:
+    init_twiss.to_parquet("init_twiss.parquet")
     
+# PLOTS
+
+if settings["MAKE_PLOTS"]:
     
-# Some plots
-s = init_twiss['s'].to_numpy()
-betx = init_twiss['betx'].to_numpy()
-bety = init_twiss['bety'].to_numpy()
+    if settings["SAVE_FIGS"]:
+        fig_machine_save = 'full_machine.pdf'
+    else:
+        fig_machine_save = None
 
-plt.figure(figsize=(10,5))
-plt.plot(s, betx, 'r-', lw=2, label='$\\beta_{x}$')
-plt.plot(s, bety, 'b-', lw=2, label='$\\beta_{y}$')
+    fig_machine = LatticePlotter.plot_latwiss(madx, "Elettra Ring", figsize=(22, 12), 
+                                              k0l_lim=(-7e-2, 7e-2), k1l_lim=(-1.5, 1.5),
+                                              disp_ylim=(-madx.table.twiss.dx.max()*2, madx.table.twiss.dx.max()*2),
+                                              plot_dipole_k1=True, lw=2, savefig=fig_machine_save)
 
-plt.xlabel('s [m]', fontsize=16)
-plt.ylabel('$\\beta_{x,y}$ [m]', fontsize=16)
-plt.tick_params(labelsize=14)
-plt.legend(loc='best', fontsize=14);
 
-if settings['SAVE_FIGS']:
-    plt.savefig('elettra_beta_ring.pdf', bbox_inches='tight')
-    
-x0 = init_twiss[init_twiss.name=='ss:1']['s'].iloc[0]
-x1 = init_twiss[init_twiss.name=='ss:2']['s'].iloc[0]
 
-aux = init_twiss[(init_twiss.s>x0) & (init_twiss.s<x1)]
-s = aux['s'].to_numpy()
-betx = aux['betx'].to_numpy()
-bety = aux['bety'].to_numpy()
+    x0 = init_twiss.s[init_twiss.name == "ll:1"][0]
+    x1 = init_twiss.s[init_twiss.name == "ll:3"][0]
 
-plt.figure(figsize=(10,5))
-plt.plot(s, betx, 'r-', lw=2, label='$\\beta_{x}$')
-plt.plot(s, bety, 'b-', lw=2, label='$\\beta_{y}$')
+    if settings["SAVE_FIGS"]:
+        fig_cell_save = 'achromat.pdf'
+    else:
+        fig_cell_save = None
 
-plt.xlabel('s [m]', fontsize=16)
-plt.ylabel('$\\beta_{x,y}$ [m]', fontsize=16)
-plt.tick_params(labelsize=14)
-plt.legend(loc='best', fontsize=14);
+    fig_cell = LatticePlotter.plot_latwiss(madx, "Elettra Cell", figsize=(22, 12), xlimits=(x0, x1), 
+                                              k0l_lim=(-7e-2, 7e-2), k1l_lim=(-1.5, 1.5),
+                                              disp_ylim=(-madx.table.twiss.dx.max()*2, madx.table.twiss.dx.max()*2),
+                                              plot_dipole_k1=True, lw=2, savefig=fig_cell_save)
 
-if settings['SAVE_FIGS']:
-    plt.savefig('elettra_beta_achromat.pdf', bbox_inches='tight')
-    
-# Compute Emittance 
 
-madx.input(f'''
-emit, deltap={madx.globals.deltap};
-''')
+    x0 = init_twiss.s[init_twiss.name == "ss:1"][0]
+    x1 = init_twiss.s[init_twiss.name == "ss:2"][0]
 
-# Stop MAD-X instance
+    if settings["SAVE_FIGS"]:
+        fig_cell_save = 'achromat_match.pdf'
+    else:
+        fig_cell_save = None
+
+    fig_cell = LatticePlotter.plot_latwiss(madx, "Elettra Cells Long Straight", figsize=(22, 12), xlimits=(x0, x1), 
+                                              k0l_lim=(-7e-2, 7e-2), k1l_lim=(-1.5, 1.5),
+                                              disp_ylim=(-madx.table.twiss.dx.max()*2, madx.table.twiss.dx.max()*2),
+                                              plot_dipole_k1=True, lw=2, savefig=fig_cell_save)
+
+
+
+# Compute Emittance
+madx.command.emit(deltap=madx.globals.deltap)
+
 
 madx.quit()
 
 # Get the emittance from the standard output
-
 ex, ey, ez = elettra_toolbox.get_emittances_from_madx_output("stdout.out", to_meters=True)
 
-print(f'ex = {ex*1e12} pm')
-print(f'ey = {ey*1e12} pm')
-print(f'ez = {ex*1e6} um')
-
-
+print(f"ex = {ex*1e12} pm")
+print(f"ey = {ey*1e12} pm")
+print(f"ez = {ex*1e6} um")
