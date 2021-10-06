@@ -3,7 +3,7 @@
   +     MAD-X 5.07.00  (64 bit, Darwin)      +
   + Support: mad@cern.ch, http://cern.ch/mad +
   + Release   date: 2021.05.03               +
-  + Execution date: 2021.10.05 10:13:15      +
+  + Execution date: 2021.10.06 16:34:14      +
   ++++++++++++++++++++++++++++++++++++++++++++
 !One achromat of the S6BA-E lattice of Elettra 2.0 created by Emanuel Karantzoulis D.Phil.
 
@@ -1539,30 +1539,6 @@ total constraints:      4
 
 START LMDIF:
 
-
-MATCH SUMMARY
-
-Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
---------------------------------------------------------------------------------------------------
-
-
-Final Penalty Function =   1.18608801e-08
-
-
-
-
-
-Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
---------------------------------------------------------------------------------
-k1_qd1                   -3.42000e+00 -3.42000e+00 -1.00000e+20  1.00000e+20
-k1_qf1                    5.75009e+00  5.73500e+00 -1.00000e+20  1.00000e+20
-k1_qd2                   -5.30000e-01 -5.30000e-01 -1.00000e+20  1.00000e+20
-k1_qf2                    5.49957e+00  5.51800e+00 -1.00000e+20  1.00000e+20
-
-END MATCH SUMMARY
-
-VARIABLE "TAR" SET TO   1.18608801e-08
-enter Twiss module
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 Initial Penalty Function =   0.15538258E-02
@@ -1586,233 +1562,12 @@ call:      11   Penalty function =   0.14140891E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 call:      16   Penalty function =   0.11860880E-07
- ++++++++++ LMDIF ended: converged successfully
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:      16   Penalty function =   0.11860880E-07
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-ll:1                       dx           4     0.00000000E+00    -4.92292800E-06     2.42352201E-09
-ll:1                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ll:3                       dx           4     0.00000000E+00    -9.71460659E-06     9.43735813E-09
-ll:3                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572007893    7.378760746e-05        116.4148239 
-
-                q1                dq1            betxmax              dxmax 
-       34.08724675       0.2663392342        12.04967571      0.05755375804 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03060459476    1.661864656e-05    6.193528734e-06        10.08726622 
-
-               dq2            betymax              dymax              dyrms 
-       2.201719544        25.90531961                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-START MATCHING
-
-number of sequences: 1
-sequence name: ring
-number of variables:    4
-user given constraints: 2
-total constraints:      4
-
-START LMDIF:
-
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.289675E-07 -1.388173E-06  0.000000E+00  0.000000E+00  2.540872E-02 -4.393547E-06
-  
-iteration:   2 error:   2.620142E-06 deltap:   0.000000E+00
-orbit:  -6.100796E-07 -1.390644E-06  0.000000E+00  0.000000E+00  2.571992E-02 -4.627409E-06
-  
-iteration:   3 error:   1.301405E-09 deltap:   0.000000E+00
-orbit:  -6.100712E-07 -1.390642E-06  0.000000E+00  0.000000E+00  2.572008E-02 -4.627471E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-Initial Penalty Function =   0.11860880E-07
-
-
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:      21   Penalty function =   0.31722050E-09
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
@@ -1824,7 +1579,7 @@ Node_Name                  Constraint   Type  Target Value       Final Value    
 --------------------------------------------------------------------------------------------------
 
 
-Final Penalty Function =   1.25699409e-14
+Final Penalty Function =   4.55366934e-22
 
 
 
@@ -1833,247 +1588,53 @@ Final Penalty Function =   1.25699409e-14
 Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
 --------------------------------------------------------------------------------
 k1_qd1                   -3.42000e+00 -3.42000e+00 -1.00000e+20  1.00000e+20
-k1_qf1                    5.75309e+00  5.75009e+00 -1.00000e+20  1.00000e+20
+k1_qf1                    5.75310e+00  5.73500e+00 -1.00000e+20  1.00000e+20
 k1_qd2                   -5.30000e-01 -5.30000e-01 -1.00000e+20  1.00000e+20
-k1_qf2                    5.49957e+00  5.49957e+00 -1.00000e+20  1.00000e+20
+k1_qf2                    5.49957e+00  5.51800e+00 -1.00000e+20  1.00000e+20
 
 END MATCH SUMMARY
 
-VARIABLE "TAR" SET TO   1.25699409e-14
-START MATCHING
-
-number of sequences: 1
-sequence name: ring
-number of variables:    4
-user given constraints: 2
-total constraints:      4
-
-START LMDIF:
-
-
-MATCH SUMMARY
-
-Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
---------------------------------------------------------------------------------------------------
-
-
-Final Penalty Function =   4.15986087e-17
-
-
-
-
-
-Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
---------------------------------------------------------------------------------
-k1_qd1                   -3.42000e+00 -3.42000e+00 -1.00000e+20  1.00000e+20
-k1_qf1                    5.75310e+00  5.75309e+00 -1.00000e+20  1.00000e+20
-k1_qd2                   -5.30000e-01 -5.30000e-01 -1.00000e+20  1.00000e+20
-k1_qf2                    5.49957e+00  5.49957e+00 -1.00000e+20  1.00000e+20
-
-END MATCH SUMMARY
-
-VARIABLE "TAR" SET TO   4.15986087e-17
-START MATCHING
-
-number of sequences: 1
-sequence name: ring
+VARIABLE "TAR" SET TO   4.55366934e-22
+enter Twiss module
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:       6   Penalty function =   0.31722050E-09
+call:      26   Penalty function =   0.12569941E-13
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:      11   Penalty function =   0.12569941E-13
+call:      31   Penalty function =   0.41598609E-16
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:      36   Penalty function =   0.13819581E-18
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:      41   Penalty function =   0.45536693E-21
  ++++++++++ LMDIF ended: converged successfully
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:      11   Penalty function =   0.12569941E-13
+call:      41   Penalty function =   0.45536693E-21
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-ll:1                       dx           4     0.00000000E+00    -4.97774792E-09     2.47779744E-15
+ll:1                       dx           4     0.00000000E+00     9.52166019E-13     9.06620128E-23
 ll:1                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ll:3                       dx           4     0.00000000E+00    -1.00459661E-08     1.00921435E-14
-ll:3                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-Initial Penalty Function =   0.12569941E-13
-
-
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:       6   Penalty function =   0.41598609E-16
- ++++++++++ LMDIF ended: converged successfully
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:       6   Penalty function =   0.41598609E-16
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-ll:1                       dx           4     0.00000000E+00     2.87673516E-10     8.27560517E-18
-ll:1                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ll:3                       dx           4     0.00000000E+00     5.77260804E-10     3.33230036E-17
-ll:3                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-number of variables:    4
-user given constraints: 2
-total constraints:      4
-
-START LMDIF:
-
-
-MATCH SUMMARY
-
-Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
---------------------------------------------------------------------------------------------------
-
-
-Final Penalty Function =   1.38195813e-19
-
-
-
-
-
-Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
---------------------------------------------------------------------------------
-k1_qd1                   -3.42000e+00 -3.42000e+00 -1.00000e+20  1.00000e+20
-k1_qf1                    5.75310e+00  5.75310e+00 -1.00000e+20  1.00000e+20
-k1_qd2                   -5.30000e-01 -5.30000e-01 -1.00000e+20  1.00000e+20
-k1_qf2                    5.49957e+00  5.49957e+00 -1.00000e+20  1.00000e+20
-
-END MATCH SUMMARY
-
-VARIABLE "TAR" SET TO   1.38195813e-19
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-Initial Penalty Function =   0.41598609E-16
-
-
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:       6   Penalty function =   0.13819581E-18
- ++++++++++ LMDIF ended: converged without success
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:       6   Penalty function =   0.13819581E-18
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-ll:1                       dx           4     0.00000000E+00    -1.65800424E-11     2.74897807E-20
-ll:1                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ll:3                       dx           4     0.00000000E+00    -3.32725160E-11     1.10706032E-19
+ll:3                       dx           4     0.00000000E+00     1.90972490E-12     3.64704921E-22
 ll:3                       dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
   
 iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
   
 iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
   
 iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
 
 ++++++ table: summ
 
@@ -2081,13 +1642,13 @@ iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2105,13 +1666,13 @@ enter Twiss module
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2129,13 +1690,13 @@ enter Twiss module
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2171,63 +1732,65 @@ enter EMIT module
  Npart                      1 /bunch     Energy                   2.4 GeV 
  gamma            4701.144689            beta            0.9999999774
  dtbyds       7.128164686e-08
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+  
+iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+  
+iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+  
+iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
   
 iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
   
 iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
   
 iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
      U0              0.532973 [MeV/turn]
  
                                                   M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.10387268          0.07990515          0.00204117
-                             damped                0.10387269          0.07990515          0.00204099
+ Fractional tunes            undamped              0.10387277          0.07990510          0.00204117
+                             damped                0.10387277          0.07990510          0.00204099
  
- beta* [m]                   x                 0.77081328E+01      0.34494064E-41      0.41462464E-03
-                             y                 0.41013525E-32      0.11838677E+01      0.16659047E-31
-                             t                 0.20940335E-02      0.33016005E-30      0.15262089E+01
+ beta* [m]                   x                 0.77081331E+01      0.18976724E-39      0.41462462E-03
+                             y                 0.12979056E-30      0.11838678E+01      0.12871849E-30
+                             t                 0.20940335E-02      0.48830371E-30      0.15262089E+01
  
- gamma* [1/m]                px                0.12973330E+00      0.13282261E-41      0.15015824E-07
-                             py                0.12955271E-33      0.84468905E+00      0.60202112E-30
-                             pt                0.30393060E-08      0.12713120E-30      0.65521510E+00
+ gamma* [1/m]                px                0.12973330E+00      0.32786015E-40      0.15015797E-07
+                             py                0.16801715E-32      0.84468903E+00      0.40764725E-30
+                             pt                0.30393006E-08      0.11196091E-30      0.65521510E+00
  
- beta(max) [m]               x                 0.12133004E+02      0.11468298E-39      0.85566802E-03
-                             y                 0.14031600E-31      0.25740343E+02      0.20976872E-31
-                             t                 0.21831647E-02      0.10976885E-28      0.15262482E+01
+ beta(max) [m]               x                 0.12133004E+02      0.50030310E-38      0.85566801E-03
+                             y                 0.18423570E-30      0.25740343E+02      0.13556141E-30
+                             t                 0.21831647E-02      0.13852613E-28      0.15262482E+01
  
- gamma(max) [1/m]            px                0.12372551E+02      0.80688393E-40      0.25953248E-07
-                             py                0.21589482E-31      0.18082164E+02      0.60202112E-30
-                             pt                0.35657229E-02      0.77230920E-29      0.65521510E+00
+ gamma(max) [1/m]            px                0.12372551E+02      0.35146826E-38      0.25953214E-07
+                             py                0.19808257E-30      0.18082164E+02      0.40764725E-30
+                             pt                0.35657229E-02      0.97027265E-29      0.65521510E+00
  
  Damping partition numbers                         1.46720381          1.00094505          1.53564143
  Damping constants [1/s]                           0.18842558E+03      0.12854632E+03      0.19721468E+03
  Damping times [s]                                 0.53071350E-02      0.77792969E-02      0.50706165E-02
- Emittances [pi micro m]                       0.15566564E-03      0.32627879E-31      0.17293860E+01
+ Emittances [pi micro m]                       0.15566564E-03      0.22676224E-30      0.17293860E+01
      U0              0.532973 [MeV/turn]
  
                                                   M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.10387268          0.07990515          0.00204117
-                             damped                0.10387269          0.07990515          0.00204099
+ Fractional tunes            undamped              0.10387277          0.07990510          0.00204117
+                             damped                0.10387277          0.07990510          0.00204099
  
- beta* [m]                   x                 0.77081328E+01      0.34494064E-41      0.41462464E-03
-                             y                 0.41013525E-32      0.11838677E+01      0.16659047E-31
-                             t                 0.20940335E-02      0.33016005E-30      0.15262089E+01
+ beta* [m]                   x                 0.77081331E+01      0.18976724E-39      0.41462462E-03
+                             y                 0.12979056E-30      0.11838678E+01      0.12871849E-30
+                             t                 0.20940335E-02      0.48830371E-30      0.15262089E+01
+ 
+ gamma* [1/m]                px                0.12973330E+00      0.32786015E-40      0.15015797E-07
+                             py                0.16801715E-32      0.84468903E+00      0.40764725E-30
+                             pt                0.30393006E-08      0.11196091E-30      0.65521510E+00
 ++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
 
  RF system: 
@@ -2240,13 +1803,13 @@ enter Twiss module
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2264,13 +1827,13 @@ enter Twiss module
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2288,13 +1851,13 @@ enter Twiss module
        259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
 
                 q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
+       34.10334877        0.396634299        12.02843875      0.05755296573 
 
              dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
+      0.0306044622    1.446033025e-05    5.242996875e-06        10.07737455 
 
                dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
+       2.223386989        25.78802032                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2304,1478 +1867,53 @@ enter Twiss module
 
            synch_6            synch_8             nflips 
                  0                  0                  0 
-enter Twiss module
 
-++++++ table: summ
+  Number of warnings: 67
+9 in C and 58 in Fortran
 
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
  
- gamma* [1/m]                px                0.12973330E+00      0.13282261E-41      0.15015824E-07
-                             py                0.12955271E-33      0.84468905E+00      0.60202112E-30
-                             pt                0.30393060E-08      0.12713120E-30      0.65521510E+00
+ beta(max) [m]               x                 0.12133004E+02      0.50030310E-38      0.85566801E-03
+                             y                 0.18423570E-30      0.25740343E+02      0.13556141E-30
+                             t                 0.21831647E-02      0.13852613E-28      0.15262482E+01
  
- beta(max) [m]               x                 0.12133004E+02      0.11468298E-39      0.85566802E-03
-                             y                 0.14031600E-31      0.25740343E+02      0.20976872E-31
-                             t                 0.21831647E-02      0.10976885E-28      0.15262482E+01
- 
- gamma(max) [1/m]            px                0.12372551E+02      0.80688393E-40      0.25953248E-07
-                             py                0.21589482E-31      0.18082164E+02      0.60202112E-30
-                             pt                0.35657229E-02      0.77230920E-29      0.65521510E+00
+ gamma(max) [1/m]            px                0.12372551E+02      0.35146826E-38      0.25953214E-07
+                             py                0.19808257E-30      0.18082164E+02      0.40764725E-30
+                             pt                0.35657229E-02      0.97027265E-29      0.65521510E+00
  
  Damping partition numbers                         1.46720381          1.00094505          1.53564143
  Damping constants [1/s]                           0.18842558E+03      0.12854632E+03      0.19721468E+03
  Damping times [s]                                 0.53071350E-02      0.77792969E-02      0.50706165E-02
- Emittances [pi micro m]                       0.15566564E-03      0.32627879E-31      0.17293860E+01
+ Emittances [pi micro m]                       0.15566564E-03      0.22676224E-30      0.17293860E+01
   
 iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
   
 iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
   
 iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
   
 iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
   
 iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
   
 iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
   
 iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
+orbit:  -6.275897E-07 -1.146954E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
   
 iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
+orbit:  -6.188345E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
   
 iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
+orbit:  -6.188303E-07 -1.148552E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.217303E-04 deltap:   0.000000E+00
-orbit:  -6.275897E-07 -1.146955E-06  0.000000E+00  0.000000E+00  2.540874E-02 -4.393411E-06
-  
-iteration:   2 error:   2.620137E-06 deltap:   0.000000E+00
-orbit:  -6.188345E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.571994E-02 -4.627443E-06
-  
-iteration:   3 error:   1.301343E-09 deltap:   0.000000E+00
-orbit:  -6.188302E-07 -1.148553E-06  0.000000E+00  0.000000E+00  2.572010E-02 -4.627505E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02572009899    7.378783893e-05        116.4146413 
-
-                q1                dq1            betxmax              dxmax 
-       34.10334868        0.396633633        12.02843885      0.05755296574 
-
-             dxrms             xcomax             xcorms                 q2 
-      0.0306044622    1.446033954e-05    5.243000949e-06         10.0773746 
-
-               dq2            betymax              dymax              dyrms 
-       2.223386879         25.7880209                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
