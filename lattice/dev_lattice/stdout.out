@@ -3,7 +3,7 @@
   +     MAD-X 5.07.00  (64 bit, Darwin)      +
   + Support: mad@cern.ch, http://cern.ch/mad +
   + Release   date: 2021.05.03               +
-  + Execution date: 2021.10.08 12:41:29      +
+  + Execution date: 2021.10.12 18:35:30      +
   ++++++++++++++++++++++++++++++++++++++++++++
 !One achromat of the S6BA-E lattice of Elettra 2.0 created by Emanuel Karantzoulis D.Phil.
 
@@ -1386,15 +1386,98 @@ enter Twiss module
 
            synch_6            synch_8             nflips 
                  0                  0                  0 
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
+
+                q1                dq1            betxmax              dxmax 
+       34.08767615        14.54867636        12.02467488      0.06859292713 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
+
+               dq2            betymax              dymax              dyrms 
+       102.7349117        136.8073112                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
+
+                q1                dq1            betxmax              dxmax 
+       34.08767615        14.54867636        12.02467488      0.06859292713 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
+
+               dq2            betymax              dymax              dyrms 
+       102.7349117        136.8073112                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
+
+                q1                dq1            betxmax              dxmax 
+       34.08767615        14.54867636        12.02467488      0.06859292713 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
+
+               dq2            betymax              dymax              dyrms 
+       102.7349117        136.8073112                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
 START MATCHING
 
+entry name: betx
+number of entries: 1
+entry value: 7.726541
+entry name: bety
+number of entries: 1
+entry value: 1.181956
+entry name: dx
+number of entries: 1
+entry value: 0.056474
+entry name: dy
+number of entries: 1
+entry value: 0.000000
 number of variables:    8
 user given constraints: 4
-total constraints:      318
+total constraints:      158
 
-START LMDIF:
+START JACOBIAN:
 
-++++++ warning: Twiss failed:  MAD-X continues
  
  Damping partition numbers                         1.31616206          1.00094746          1.68668558
  Damping constants [1/s]                           0.16615946E+03      0.12636505E+03      0.21293636E+03
@@ -1410,9 +1493,40 @@ orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4
 iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
 orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
+orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
+  
+iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
+orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
+  
+iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
+orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
+orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
+  
+iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
+orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
+  
+iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
+orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
+orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
+  
+iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
+orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
+  
+iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
+orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-Initial Penalty Function =   0.38343846E+06
+ JACOBIAN Strategy =           3
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+Initial Penalty Function =   0.1542194664379660E-01
 
 
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
@@ -1423,316 +1537,208 @@ Initial Penalty Function =   0.38343846E+06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-++++++ warning: TWCLORB:  Horizontal plane might be unstable More information with the debug flag on.                                                                                                                                                                               
-++++++ warning: TWCLORB:  Vertical plane might be unstable More information with the debug flag on.                                                                                                                                                                                 
-++++++ warning: TWCPIN:  Both modes are unstable for delta(p)/p =     0.000000: cosmux =    -2.160371, cosmuy =     1.023907                                                   
+ Solve system with            3 con,           8 var
+ Rank             3   Condition number    37.895927227298110     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Step length    5.1033153064138125E-003
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:     2 Dx =   0.51033153E-02  Penalty function =  0.3266267381757755E-02
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Solve system with            3 con,           8 var
+ Rank             3   Condition number    33.147069177380530     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Step length    9.0707584949082081E-004
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:     3 Dx =   0.90707585E-03  Penalty function =  0.4338687637534579E-05
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Solve system with            3 con,           8 var
+ Rank             3   Condition number    33.844421840502520     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Step length    3.7909111041381201E-005
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 
 MATCH SUMMARY
 
 Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
 --------------------------------------------------------------------------------------------------
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
- ++++++++++ LMDIF ended: converged without success
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-call:      17   Penalty function =   0.38343846E+06
+call:     4 Dx =   0.37909111E-04  Penalty function =  0.1580780926399929E-10
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-left_marker:1              bety         4     1.41075800E+00     2.39964352E-01     1.37075777E+00
-left_marker:1              betx         4     8.36888000E+00     8.34809446E+00     4.32038535E-04
-left_marker:1              dx           4     0.00000000E+00    -9.67426718E-03     9.35914455E-03
-left_marker:1              dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ll:2                       bety         2     3.00000000E+01     2.56635403E+01     0.00000000E+00
-dmon:17                    bety         2     3.00000000E+01     2.61807984E+01     0.00000000E+00
-mon:7                      bety         2     3.00000000E+01     2.61807984E+01     0.00000000E+00
-dmon:18                    bety         2     3.00000000E+01     2.67032656E+01     0.00000000E+00
-dr10:1                     bety         2     3.00000000E+01     2.73796248E+01     0.00000000E+00
-dcor:5                     bety         2     3.00000000E+01     2.86708016E+01     0.00000000E+00
-oct1_r:1                   bety         2     3.00000000E+01     2.86708016E+01     0.00000000E+00
-ch:9                       bety         2     3.00000000E+01     2.86708016E+01     0.00000000E+00
-cv:9                       bety         2     3.00000000E+01     2.86708016E+01     0.00000000E+00
-dcor:6                     bety         2     3.00000000E+01     2.99919828E+01     0.00000000E+00
-dr11:1                     bety         2     3.00000000E+01     3.08894395E+01     7.91102587E-01
-qd1_s01.2:1                bety         2     3.00000000E+01     3.20988211E+01     4.40504983E+00
-dr12:1                     bety         2     3.00000000E+01     3.20933940E+01     4.38229843E+00
-sexdrift06:5               bety         2     3.00000000E+01     3.20891186E+01     4.36441634E+00
-sex2h2:1                   bety         2     3.00000000E+01     3.20891186E+01     4.36441634E+00
-skew:3                     bety         2     3.00000000E+01     3.20891186E+01     4.36441634E+00
-sexdrift06:6               bety         2     3.00000000E+01     3.20850522E+01     4.34744287E+00
-dr13:1                     bety         2     3.00000000E+01     3.20834243E+01     4.34065662E+00
-dr14:1                     bety         2     3.00000000E+01     3.20790734E+01     4.32254602E+00
-qf1_s01.2:1                bety         2     3.00000000E+01     4.39209415E+01     1.93792611E+02
-dr15:1                     bety         2     3.00000000E+01     5.61603492E+01     6.84363870E+02
-sexdrift06:7               bety         2     3.00000000E+01     6.38290666E+01     1.14440574E+03
-sex1h2:1                   bety         2     3.00000000E+01     6.38290666E+01     1.14440574E+03
-ch:10                      bety         2     3.00000000E+01     6.38290666E+01     1.14440574E+03
-cv:10                      bety         2     3.00000000E+01     6.38290666E+01     1.14440574E+03
-sexdrift06:8               bety         2     3.00000000E+01     7.19885570E+01     1.76303892E+03
-dr16:1                     bety         2     3.00000000E+01     8.36312595E+01     2.87631200E+03
-dr17:1                     bety         2     3.00000000E+01     8.85326228E+01     3.42606793E+03
-qd2_s01.2:1                bety         2     3.00000000E+01     1.05172431E+02     5.65089435E+03
-dr18:1                     bety         2     3.00000000E+01     1.14700196E+02     7.17412320E+03
-dmon:19                    bety         2     3.00000000E+01     1.18861999E+02     7.89645480E+03
-mon:8                      bety         2     3.00000000E+01     1.18861999E+02     7.89645480E+03
-dmon:20                    bety         2     3.00000000E+01     1.23097976E+02     8.66723319E+03
-dr19:1                     bety         2     3.00000000E+01     1.34101621E+02     1.08371475E+04
-bf1:2                      bety         2     3.00000000E+01     1.17872447E+02     7.72156690E+03
-dr20:1                     bety         2     3.00000000E+01     8.45182382E+01     2.97223829E+03
-sexdrift06:9               bety         2     3.00000000E+01     7.40677241E+01     1.94196431E+03
-sd5h2:1                    bety         2     3.00000000E+01     7.40677241E+01     1.94196431E+03
-skew:4                     bety         2     3.00000000E+01     7.40677241E+01     1.94196431E+03
-sexdrift06:10              bety         2     3.00000000E+01     6.43067594E+01     1.17695374E+03
-dr21:1                     bety         2     3.00000000E+01     5.66993261E+01     7.12854017E+02
-qf2_s01.2:1                bety         2     3.00000000E+01     3.94393422E+01     8.91011816E+01
-dr22:1                     bety         2     3.00000000E+01     3.89867288E+01     8.07612952E+01
-dcor:7                     bety         2     3.00000000E+01     3.83128596E+01     6.91036340E+01
-oct2_r:1                   bety         2     3.00000000E+01     3.83128596E+01     6.91036340E+01
-ch:11                      bety         2     3.00000000E+01     3.83128596E+01     6.91036340E+01
-cv:11                      bety         2     3.00000000E+01     3.83128596E+01     6.91036340E+01
-dcor:8                     bety         2     3.00000000E+01     3.76450512E+01     5.84468082E+01
-dr23:1                     bety         2     3.00000000E+01     3.74237953E+01     5.51127370E+01
-dmon:21                    bety         2     3.00000000E+01     3.71481725E+01     5.10963697E+01
-dmon:22                    bety         2     3.00000000E+01     3.68736019E+01     4.72464026E+01
-dr24:1                     bety         2     3.00000000E+01     3.67640683E+01     4.57526194E+01
-sexdrift10:5               bety         2     3.00000000E+01     3.56779919E+01     3.22395923E+01
-sf3h2:1                    bety         2     3.00000000E+01     3.56779919E+01     3.22395923E+01
-sexdrift10:6               bety         2     3.00000000E+01     3.46086648E+01     2.12397914E+01
-dr25:1                     bety         2     3.00000000E+01     3.40803157E+01     1.66489766E+01
-bqf1_s01.2:1               bety         2     3.00000000E+01     4.23218370E+01     1.51827668E+02
-dr26:1                     bety         2     3.00000000E+01     4.67267802E+01     2.79785175E+02
-sexdrift08:13              bety         2     3.00000000E+01     5.42284287E+01     5.87016758E+02
-sd4h2:1                    bety         2     3.00000000E+01     5.42284287E+01     5.87016758E+02
-ch:12                      bety         2     3.00000000E+01     5.42284287E+01     5.87016758E+02
-cv:12                      bety         2     3.00000000E+01     5.42284287E+01     5.87016758E+02
-sexdrift08:14              bety         2     3.00000000E+01     6.22885881E+01     1.04255292E+03
-dr27a:1                    bety         2     3.00000000E+01     7.09072044E+01     1.67339937E+03
-dmon:23                    bety         2     3.00000000E+01     7.37150493E+01     1.91100553E+03
-mon:9                      bety         2     3.00000000E+01     7.37150493E+01     1.91100553E+03
-dmon:24                    bety         2     3.00000000E+01     7.65774310E+01     2.16945708E+03
-dr27b:1                    bety         2     3.00000000E+01     8.24658049E+01     2.75266068E+03
-vader9:5                   bety         2     3.00000000E+01     9.02131727E+01     3.62562617E+03
-vader8:5                   bety         2     3.00000000E+01     9.59750031E+01     4.35270104E+03
-vader7:5                   bety         2     3.00000000E+01     9.99754002E+01     4.89655663E+03
-vader6:5                   bety         2     3.00000000E+01     1.02519949E+02     5.25914299E+03
-vader5:5                   bety         2     3.00000000E+01     1.03942643E+02     5.46751448E+03
-vader4:5                   bety         2     3.00000000E+01     1.04567906E+02     5.56037257E+03
-vader3:5                   bety         2     3.00000000E+01     1.04686021E+02     5.57800172E+03
-vader2:5                   bety         2     3.00000000E+01     1.04539116E+02     5.55607988E+03
-vader1:5                   bety         2     3.00000000E+01     1.04314539E+02     5.52265069E+03
-vader0:5                   bety         2     3.00000000E+01     1.04044719E+02     5.48262044E+03
-vader0:6                   bety         2     3.00000000E+01     1.03775253E+02     5.44278801E+03
-vader1:6                   bety         2     3.00000000E+01     1.03451789E+02     5.39516530E+03
-vader2:6                   bety         2     3.00000000E+01     1.02816458E+02     5.30223651E+03
-vader3:6                   bety         2     3.00000000E+01     1.01689737E+02     5.13941844E+03
-vader4:6                   bety         2     3.00000000E+01     9.98465661E+01     4.87854279E+03
-vader5:6                   bety         2     3.00000000E+01     9.70280773E+01     4.49276314E+03
-vader6:6                   bety         2     3.00000000E+01     9.29613107E+01     3.96412665E+03
-vader7:6                   bety         2     3.00000000E+01     8.73893466E+01     3.29353710E+03
-vader8:6                   bety         2     3.00000000E+01     8.01136071E+01     2.51137361E+03
-vader9:6                   bety         2     3.00000000E+01     7.10484470E+01     1.68497500E+03
-dr30:1                     bety         2     3.00000000E+01     5.44824607E+01     5.99390882E+02
-sexdrift08:15              bety         2     3.00000000E+01     4.53796673E+01     2.36534165E+02
-sd3h2:1                    bety         2     3.00000000E+01     4.53796673E+01     2.36534165E+02
-ch:13                      bety         2     3.00000000E+01     4.53796673E+01     2.36534165E+02
-cv:13                      bety         2     3.00000000E+01     4.53796673E+01     2.36534165E+02
-sexdrift08:16              bety         2     3.00000000E+01     3.71086904E+01     5.05334793E+01
-dmon:25                    bety         2     3.00000000E+01     3.46945787E+01     2.20390689E+01
-mon:10                     bety         2     3.00000000E+01     3.46945787E+01     2.20390689E+01
-dmon:26                    bety         2     3.00000000E+01     3.23616900E+01     5.57757983E+00
-bqf2_s01.2:1               bety         2     3.00000000E+01     2.05111464E+01     0.00000000E+00
-dr31:1                     bety         2     3.00000000E+01     1.96839614E+01     0.00000000E+00
-sexdrift10:7               bety         2     3.00000000E+01     1.80814118E+01     0.00000000E+00
-sf2h2:1                    bety         2     3.00000000E+01     1.80814118E+01     0.00000000E+00
-sexdrift10:8               bety         2     3.00000000E+01     1.65478730E+01     0.00000000E+00
-dr32:1                     bety         2     3.00000000E+01     1.55155111E+01     0.00000000E+00
-bqf3_s01.2:1               bety         2     3.00000000E+01     1.66379741E+01     0.00000000E+00
-dmon:27                    bety         2     3.00000000E+01     1.72631343E+01     0.00000000E+00
-dmon:28                    bety         2     3.00000000E+01     1.78998975E+01     0.00000000E+00
-sexdrift08:17              bety         2     3.00000000E+01     2.00155130E+01     0.00000000E+00
-sd2h2:1                    bety         2     3.00000000E+01     2.00155130E+01     0.00000000E+00
-ch:14                      bety         2     3.00000000E+01     2.00155130E+01     0.00000000E+00
-cv:14                      bety         2     3.00000000E+01     2.00155130E+01     0.00000000E+00
-sexdrift08:18              bety         2     3.00000000E+01     2.22499859E+01     0.00000000E+00
-dr33a:1                    bety         2     3.00000000E+01     2.31185466E+01     0.00000000E+00
-dmon:29                    bety         2     3.00000000E+01     2.38551111E+01     0.00000000E+00
-mon:11                     bety         2     3.00000000E+01     2.38551111E+01     0.00000000E+00
-dmon:30                    bety         2     3.00000000E+01     2.46032791E+01     0.00000000E+00
-dr33b:1                    bety         2     3.00000000E+01     2.61344258E+01     0.00000000E+00
-vader9:7                   bety         2     3.00000000E+01     2.80870463E+01     0.00000000E+00
-vader8:7                   bety         2     3.00000000E+01     2.94371459E+01     0.00000000E+00
-vader7:7                   bety         2     3.00000000E+01     3.02749754E+01     7.56114867E-02
-vader6:7                   bety         2     3.00000000E+01     3.07079578E+01     5.01204277E-01
-vader5:7                   bety         2     3.00000000E+01     3.08458759E+01     7.15506033E-01
-vader4:7                   bety         2     3.00000000E+01     3.07908910E+01     6.25508644E-01
-vader3:7                   bety         2     3.00000000E+01     3.06316166E+01     3.98939561E-01
-vader2:7                   bety         2     3.00000000E+01     3.04402176E+01     1.93791547E-01
-vader1:7                   bety         2     3.00000000E+01     3.02715028E+01     7.37137717E-02
-vader0:7                   bety         2     3.00000000E+01     3.00918131E+01     8.42965091E-03
-vader0:8                   bety         2     3.00000000E+01     2.99126740E+01     0.00000000E+00
-vader1:8                   bety         2     3.00000000E+01     2.97167337E+01     0.00000000E+00
-vader2:8                   bety         2     3.00000000E+01     2.93876503E+01     0.00000000E+00
-vader3:8                   bety         2     3.00000000E+01     2.88758213E+01     0.00000000E+00
-vader4:8                   bety         2     3.00000000E+01     2.81204376E+01     0.00000000E+00
-vader5:8                   bety         2     3.00000000E+01     2.70537908E+01     0.00000000E+00
-vader6:8                   bety         2     3.00000000E+01     2.56079624E+01     0.00000000E+00
-vader7:8                   bety         2     3.00000000E+01     2.37244533E+01     0.00000000E+00
-vader8:8                   bety         2     3.00000000E+01     2.13670415E+01     0.00000000E+00
-vader9:8                   bety         2     3.00000000E+01     1.85376040E+01     0.00000000E+00
-dr40:1                     bety         2     3.00000000E+01     1.35154183E+01     0.00000000E+00
-sexdrift08:19              bety         2     3.00000000E+01     1.08194535E+01     0.00000000E+00
-sd1h2:1                    bety         2     3.00000000E+01     1.08194535E+01     0.00000000E+00
-ch:15                      bety         2     3.00000000E+01     1.08194535E+01     0.00000000E+00
-cv:15                      bety         2     3.00000000E+01     1.08194535E+01     0.00000000E+00
-sexdrift08:20              bety         2     3.00000000E+01     8.42419161E+00     0.00000000E+00
-dr41:1                     bety         2     3.00000000E+01     7.07982343E+00     0.00000000E+00
-bqf4_s01.2:1               bety         2     3.00000000E+01     3.43275476E+00     0.00000000E+00
-dmon:31                    bety         2     3.00000000E+01     3.24434978E+00     0.00000000E+00
-mon:12                     bety         2     3.00000000E+01     3.24434978E+00     0.00000000E+00
-dmon:32                    bety         2     3.00000000E+01     3.06163657E+00     0.00000000E+00
-sexdrift08:21              bety         2     3.00000000E+01     2.51520305E+00     0.00000000E+00
-sf1h2:1                    bety         2     3.00000000E+01     2.51520305E+00     0.00000000E+00
-ch:16                      bety         2     3.00000000E+01     2.51520305E+00     0.00000000E+00
-cv:16                      bety         2     3.00000000E+01     2.51520305E+00     0.00000000E+00
-sexdrift08:22              bety         2     3.00000000E+01     2.02704102E+00     0.00000000E+00
-ss:2                       bety         2     3.00000000E+01     2.19608493E-01     0.00000000E+00
-middle_marker:1            bety         4     1.18195600E+00     2.19608493E-01     9.26112723E-01
-middle_marker:1            betx         4     7.72654100E+00     7.66988877E+00     3.20947512E-03
-middle_marker:1            dx           4     5.64740000E-02     6.49732865E-02     7.22378703E-03
-middle_marker:1            dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
-ss:3                       bety         2     3.00000000E+01     2.02685594E+00     0.00000000E+00
-sexdrift08:23              bety         2     3.00000000E+01     2.51499447E+00     0.00000000E+00
-cv:17                      bety         2     3.00000000E+01     2.51499447E+00     0.00000000E+00
-ch:17                      bety         2     3.00000000E+01     2.51499447E+00     0.00000000E+00
-sf1h1:2                    bety         2     3.00000000E+01     2.51499447E+00     0.00000000E+00
-sexdrift08:24              bety         2     3.00000000E+01     3.06140370E+00     0.00000000E+00
-dmon:33                    bety         2     3.00000000E+01     3.24410929E+00     0.00000000E+00
-mon:13                     bety         2     3.00000000E+01     3.24410929E+00     0.00000000E+00
-dmon:34                    bety         2     3.00000000E+01     3.43250663E+00     0.00000000E+00
-bqf4_s02.1:2               bety         2     3.00000000E+01     7.07940381E+00     0.00000000E+00
-dl41:2                     bety         2     3.00000000E+01     8.42370657E+00     0.00000000E+00
-sexdrift08:25              bety         2     3.00000000E+01     1.08188544E+01     0.00000000E+00
-cv:18                      bety         2     3.00000000E+01     1.08188544E+01     0.00000000E+00
-ch:18                      bety         2     3.00000000E+01     1.08188544E+01     0.00000000E+00
-sd1h1:2                    bety         2     3.00000000E+01     1.08188544E+01     0.00000000E+00
-sexdrift08:26              bety         2     3.00000000E+01     1.35146996E+01     0.00000000E+00
-dl40:2                     bety         2     3.00000000E+01     1.85366688E+01     0.00000000E+00
-vader9:9                   bety         2     3.00000000E+01     2.13659888E+01     0.00000000E+00
-vader8:9                   bety         2     3.00000000E+01     2.37233072E+01     0.00000000E+00
-vader7:9                   bety         2     3.00000000E+01     2.56067458E+01     0.00000000E+00
-vader6:9                   bety         2     3.00000000E+01     2.70525236E+01     0.00000000E+00
-vader5:9                   bety         2     3.00000000E+01     2.81191361E+01     0.00000000E+00
-vader4:9                   bety         2     3.00000000E+01     2.88744980E+01     0.00000000E+00
-vader3:9                   bety         2     3.00000000E+01     2.93863143E+01     0.00000000E+00
-vader2:9                   bety         2     3.00000000E+01     2.97153910E+01     0.00000000E+00
-vader1:9                   bety         2     3.00000000E+01     2.99113283E+01     0.00000000E+00
-vader0:9                   bety         2     3.00000000E+01     3.00904651E+01     8.18394303E-03
-vader0:10                  bety         2     3.00000000E+01     3.02701527E+01     7.29824622E-02
-vader1:10                  bety         2     3.00000000E+01     3.04388660E+01     1.92603371E-01
-vader2:10                  bety         2     3.00000000E+01     3.06302651E+01     3.97234055E-01
-vader3:10                  bety         2     3.00000000E+01     3.07895431E+01     6.23378381E-01
-vader4:10                  bety         2     3.00000000E+01     3.08445379E+01     7.13244245E-01
-vader5:10                  bety         2     3.00000000E+01     3.07066390E+01     4.99338662E-01
-vader6:10                  bety         2     3.00000000E+01     3.02736884E+01     7.49053492E-02
-vader7:10                  bety         2     3.00000000E+01     2.94359068E+01     0.00000000E+00
-vader8:10                  bety         2     3.00000000E+01     2.80858742E+01     0.00000000E+00
-vader9:10                  bety         2     3.00000000E+01     2.61333422E+01     0.00000000E+00
-dl33:2                     bety         2     3.00000000E+01     2.22490720E+01     0.00000000E+00
-sexdrift08:27              bety         2     3.00000000E+01     2.00146964E+01     0.00000000E+00
-cv:19                      bety         2     3.00000000E+01     2.00146964E+01     0.00000000E+00
-ch:19                      bety         2     3.00000000E+01     2.00146964E+01     0.00000000E+00
-sd2h1:2                    bety         2     3.00000000E+01     2.00146964E+01     0.00000000E+00
-sexdrift08:28              bety         2     3.00000000E+01     1.78992347E+01     0.00000000E+00
-dmon:35                    bety         2     3.00000000E+01     1.72625169E+01     0.00000000E+00
-mon:14                     bety         2     3.00000000E+01     1.72625169E+01     0.00000000E+00
-dmon:36                    bety         2     3.00000000E+01     1.66374010E+01     0.00000000E+00
-bqf3_s02.1:2               bety         2     3.00000000E+01     1.55152317E+01     0.00000000E+00
-dl32:2                     bety         2     3.00000000E+01     1.65476614E+01     0.00000000E+00
-sexdrift10:9               bety         2     3.00000000E+01     1.80813056E+01     0.00000000E+00
-sf2h1:2                    bety         2     3.00000000E+01     1.80813056E+01     0.00000000E+00
-sexdrift10:10              bety         2     3.00000000E+01     1.96838058E+01     0.00000000E+00
-dl31:2                     bety         2     3.00000000E+01     2.05109647E+01     0.00000000E+00
-bqf2_s02.1:2               bety         2     3.00000000E+01     3.23613481E+01     5.57596497E+00
-dmon:37                    bety         2     3.00000000E+01     3.46942149E+01     2.20356536E+01
-dmon:38                    bety         2     3.00000000E+01     3.71083041E+01     5.05279877E+01
-sexdrift08:29              bety         2     3.00000000E+01     4.53792045E+01     2.36519931E+02
-cv:20                      bety         2     3.00000000E+01     4.53792045E+01     2.36519931E+02
-ch:20                      bety         2     3.00000000E+01     4.53792045E+01     2.36519931E+02
-sd3h1:2                    bety         2     3.00000000E+01     4.53792045E+01     2.36519931E+02
-sexdrift08:30              bety         2     3.00000000E+01     5.44820960E+01     5.99373023E+02
-dl30b:2                    bety         2     3.00000000E+01     5.81101198E+01     7.90178838E+02
-dmon:39                    bety         2     3.00000000E+01     6.12228229E+01     9.74864669E+02
-mon:15                     bety         2     3.00000000E+01     6.12228229E+01     9.74864669E+02
-dmon:40                    bety         2     3.00000000E+01     6.44167530E+01     1.18451289E+03
-dl30a:2                    bety         2     3.00000000E+01     7.10482946E+01     1.68496249E+03
-vader9:11                  bety         2     3.00000000E+01     8.01135909E+01     2.51137200E+03
-vader8:11                  bety         2     3.00000000E+01     8.73894578E+01     3.29354987E+03
-vader7:11                  bety         2     3.00000000E+01     9.29615343E+01     3.96415480E+03
-vader6:11                  bety         2     3.00000000E+01     9.70283951E+01     4.49280575E+03
-vader5:11                  bety         2     3.00000000E+01     9.98469598E+01     4.87859779E+03
-vader4:11                  bety         2     3.00000000E+01     1.01690190E+02     5.13948330E+03
-vader3:11                  bety         2     3.00000000E+01     1.02816954E+02     5.30230874E+03
-vader2:11                  bety         2     3.00000000E+01     1.03452316E+02     5.39524265E+03
-vader1:11                  bety         2     3.00000000E+01     1.03775800E+02     5.44286864E+03
-vader0:11                  bety         2     3.00000000E+01     1.04045285E+02     5.48270417E+03
-vader0:12                  bety         2     3.00000000E+01     1.04315123E+02     5.52273757E+03
-vader1:12                  bety         2     3.00000000E+01     1.04539720E+02     5.55616982E+03
-vader2:12                  bety         2     3.00000000E+01     1.04686648E+02     5.57809540E+03
-vader3:12                  bety         2     3.00000000E+01     1.04568558E+02     5.56046978E+03
-vader4:12                  bety         2     3.00000000E+01     1.03943315E+02     5.46761389E+03
-vader5:12                  bety         2     3.00000000E+01     1.02520630E+02     5.25924181E+03
-vader6:12                  bety         2     3.00000000E+01     9.99760716E+01     4.89665059E+03
-vader7:12                  bety         2     3.00000000E+01     9.59756374E+01     4.35278473E+03
-vader8:12                  bety         2     3.00000000E+01     9.02137353E+01     3.62569391E+03
-vader9:12                  bety         2     3.00000000E+01     8.24662567E+01     2.75270809E+03
-dl27:2                     bety         2     3.00000000E+01     6.22887501E+01     1.04256339E+03
-sexdrift08:31              bety         2     3.00000000E+01     5.42284843E+01     5.87019451E+02
-cv:21                      bety         2     3.00000000E+01     5.42284843E+01     5.87019451E+02
-ch:21                      bety         2     3.00000000E+01     5.42284843E+01     5.87019451E+02
-sd4h1:2                    bety         2     3.00000000E+01     5.42284843E+01     5.87019451E+02
-sexdrift08:32              bety         2     3.00000000E+01     4.67271114E+01     2.79796256E+02
-dl26:2                     bety         2     3.00000000E+01     4.23223186E+01     1.51839535E+02
-bqf1_s02.1:2               bety         2     3.00000000E+01     3.40817398E+01     1.66606002E+01
-dl25:2                     bety         2     3.00000000E+01     3.46103751E+01     2.12555584E+01
-sexdrift10:11              bety         2     3.00000000E+01     3.56802872E+01     3.22656623E+01
-sf3h1:2                    bety         2     3.00000000E+01     3.56802872E+01     3.22656623E+01
-sexdrift10:12              bety         2     3.00000000E+01     3.67662906E+01     4.57826889E+01
-dl24:2                     bety         2     3.00000000E+01     3.68758168E+01     4.72768564E+01
-dmon:41                    bety         2     3.00000000E+01     3.71503686E+01     5.11277709E+01
-dmon:42                    bety         2     3.00000000E+01     3.74259724E+01     5.51450667E+01
-dl23:2                     bety         2     3.00000000E+01     3.76472130E+01     5.84798666E+01
-dcor:9                     bety         2     3.00000000E+01     3.83149745E+01     6.91388014E+01
-cv:22                      bety         2     3.00000000E+01     3.83149745E+01     6.91388014E+01
-ch:22                      bety         2     3.00000000E+01     3.83149745E+01     6.91388014E+01
-oct2_l:2                   bety         2     3.00000000E+01     3.83149745E+01     6.91388014E+01
-dcor:10                    bety         2     3.00000000E+01     3.89887959E+01     8.07984508E+01
-dl22:2                     bety         2     3.00000000E+01     3.94413766E+01     8.91395924E+01
-qf2_s02.1:2                bety         2     3.00000000E+01     5.67020756E+01     7.13000844E+02
-dl21:2                     bety         2     3.00000000E+01     6.43099034E+01     1.17716947E+03
-sexdrift08:33              bety         2     3.00000000E+01     7.74784320E+01     2.25420151E+03
-skew:5                     bety         2     3.00000000E+01     7.74784320E+01     2.25420151E+03
-sd5h1:2                    bety         2     3.00000000E+01     7.74784320E+01     2.25420151E+03
-sexdrift08:34              bety         2     3.00000000E+01     9.18734220E+01     3.82832036E+03
-dl20b:2                    bety         2     3.00000000E+01     9.75876088E+01     4.56808486E+03
-dmon:43                    bety         2     3.00000000E+01     1.02481125E+02     5.25351349E+03
-mon:16                     bety         2     3.00000000E+01     1.02481125E+02     5.25351349E+03
-dmon:44                    bety         2     3.00000000E+01     1.07494363E+02     6.00537631E+03
-dl20a:2                    bety         2     3.00000000E+01     1.17880004E+02     7.72289518E+03
-bf1:3                      bety         2     3.00000000E+01     1.34112273E+02     1.08393653E+04
-dl19:2                     bety         2     3.00000000E+01     1.21914078E+02     8.44819777E+03
-dl18:2                     bety         2     3.00000000E+01     1.05180715E+02     5.65213993E+03
-qd2_s02.1:2                bety         2     3.00000000E+01     8.85395419E+01     3.42687797E+03
-dl17:2                     bety         2     3.00000000E+01     8.36377753E+01     2.87701094E+03
-dmon:45                    bety         2     3.00000000E+01     7.99054052E+01     2.49054947E+03
-mon:17                     bety         2     3.00000000E+01     7.99054052E+01     2.49054947E+03
-dmon:46                    bety         2     3.00000000E+01     7.62582414E+01     2.13982490E+03
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Solve system with            3 con,           8 var
+ Rank             3   Condition number    33.872145123265696     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Step length    6.3872056788081091E-008
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:     5 Dx =   0.63872057E-07  Penalty function =  0.1752875529505206E-17
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Solve system with            3 con,           8 var
+ Rank             3   Condition number    33.872192594074043     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Step length    1.8524913582138651E-011
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+call:     6 Dx =   0.18524914E-10  Penalty function =  0.1562996068288410E-24
+ ++++++++++ JACOBIAN ended: converged successfully
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+ Final difference norm:  0.23846784563163617     
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+middle_marker:1            bety         2     3.00000000E+01     1.18195600E+00     0.00000000E+00
+ss:3                       bety         2     3.00000000E+01     1.51775530E+00     0.00000000E+00
+sexdrift08:23              bety         2     3.00000000E+01     1.60845242E+00     0.00000000E+00
+cv:17                      bety         2     3.00000000E+01     1.60845242E+00     0.00000000E+00
+ch:17                      bety         2     3.00000000E+01     1.60845242E+00     0.00000000E+00
+sf1h1:2                    bety         2     3.00000000E+01     1.60845242E+00     0.00000000E+00
+sexdrift08:24              bety         2     3.00000000E+01     1.70997904E+00     0.00000000E+00
+dmon:33                    bety         2     3.00000000E+01     1.74392700E+00     0.00000000E+00
+mon:13                     bety         2     3.00000000E+01     1.74392700E+00     0.00000000E+00
+dmon:34                    bety         2     3.00000000E+01     1.77893254E+00     0.00000000E+00
+bqf4_s02.1:2               bety         2     3.00000000E+01     2.82794284E+00     0.00000000E+00
+dl41:2                     bety         2     3.00000000E+01     3.25201426E+00     0.00000000E+00
+sexdrift08:25              bety         2     3.00000000E+01     3.99555668E+00     0.00000000E+00
+cv:18                      bety         2     3.00000000E+01     3.99555668E+00     0.00000000E+00
+ch:18                      bety         2     3.00000000E+01     3.99555668E+00     0.00000000E+00
+sd1h1:2                    bety         2     3.00000000E+01     3.99555668E+00     0.00000000E+00
+sexdrift08:26              bety         2     3.00000000E+01     4.81913373E+00     0.00000000E+00
+dl40:2                     bety         2     3.00000000E+01     6.32814532E+00     0.00000000E+00
+vader9:9                   bety         2     3.00000000E+01     7.15990134E+00     0.00000000E+00
+vader8:9                   bety         2     3.00000000E+01     7.83303217E+00     0.00000000E+00
+vader7:9                   bety         2     3.00000000E+01     8.35355720E+00     0.00000000E+00
+vader6:9                   bety         2     3.00000000E+01     8.73804083E+00     0.00000000E+00
+vader5:9                   bety         2     3.00000000E+01     9.00866193E+00     0.00000000E+00
+vader4:9                   bety         2     3.00000000E+01     9.18935474E+00     0.00000000E+00
+vader3:9                   bety         2     3.00000000E+01     9.30302964E+00     0.00000000E+00
+vader2:9                   bety         2     3.00000000E+01     9.36973004E+00     0.00000000E+00
+vader1:9                   bety         2     3.00000000E+01     9.40551431E+00     0.00000000E+00
+vader0:9                   bety         2     3.00000000E+01     9.43636745E+00     0.00000000E+00
+vader0:10                  bety         2     3.00000000E+01     9.46732138E+00     0.00000000E+00
+vader1:10                  bety         2     3.00000000E+01     9.49434774E+00     0.00000000E+00
+vader2:10                  bety         2     3.00000000E+01     9.51729865E+00     0.00000000E+00
+vader3:10                  bety         2     3.00000000E+01     9.51921889E+00     0.00000000E+00
+vader4:10                  bety         2     3.00000000E+01     9.47810895E+00     0.00000000E+00
+vader5:10                  bety         2     3.00000000E+01     9.36745749E+00     0.00000000E+00
+vader6:10                  bety         2     3.00000000E+01     9.15743192E+00     0.00000000E+00
+vader7:10                  bety         2     3.00000000E+01     8.81701979E+00     0.00000000E+00
+vader8:10                  bety         2     3.00000000E+01     8.31739252E+00     0.00000000E+00
+vader9:10                  bety         2     3.00000000E+01     7.63666210E+00     0.00000000E+00
+dl33:2                     bety         2     3.00000000E+01     6.32361847E+00     0.00000000E+00
+sexdrift08:27              bety         2     3.00000000E+01     5.57952998E+00     0.00000000E+00
+cv:19                      bety         2     3.00000000E+01     5.57952998E+00     0.00000000E+00
+ch:19                      bety         2     3.00000000E+01     5.57952998E+00     0.00000000E+00
+sd2h1:2                    bety         2     3.00000000E+01     5.57952998E+00     0.00000000E+00
+sexdrift08:28              bety         2     3.00000000E+01     4.88416300E+00     0.00000000E+00
+dmon:35                    bety         2     3.00000000E+01     4.67685100E+00     0.00000000E+00
+mon:14                     bety         2     3.00000000E+01     4.67685100E+00     0.00000000E+00
+dmon:36                    bety         2     3.00000000E+01     4.47429623E+00     0.00000000E+00
+bqf3_s02.1:2               bety         2     3.00000000E+01     3.86418409E+00     0.00000000E+00
+dl32:2                     bety         2     3.00000000E+01     4.03713785E+00     0.00000000E+00
+sexdrift10:9               bety         2     3.00000000E+01     4.29508716E+00     0.00000000E+00
+sf2h1:2                    bety         2     3.00000000E+01     4.29508716E+00     0.00000000E+00
+sexdrift10:10              bety         2     3.00000000E+01     4.56581143E+00     0.00000000E+00
+dl31:2                     bety         2     3.00000000E+01     4.70596990E+00     0.00000000E+00
+bqf2_s02.1:2               bety         2     3.00000000E+01     7.12490974E+00     0.00000000E+00
+dmon:37                    bety         2     3.00000000E+01     7.61550273E+00     0.00000000E+00
+dmon:38                    bety         2     3.00000000E+01     8.12259796E+00     0.00000000E+00
+sexdrift08:29              bety         2     3.00000000E+01     9.85619762E+00     0.00000000E+00
+cv:20                      bety         2     3.00000000E+01     9.85619762E+00     0.00000000E+00
+ch:20                      bety         2     3.00000000E+01     9.85619762E+00     0.00000000E+00
+sd3h1:2                    bety         2     3.00000000E+01     9.85619762E+00     0.00000000E+00
+sexdrift08:30              bety         2     3.00000000E+01     1.17587977E+01     0.00000000E+00
+dl30b:2                    bety         2     3.00000000E+01     1.25158394E+01     0.00000000E+00
+dmon:39                    bety         2     3.00000000E+01     1.31648603E+01     0.00000000E+00
+mon:15                     bety         2     3.00000000E+01     1.31648603E+01     0.00000000E+00
+dmon:40                    bety         2     3.00000000E+01     1.38303836E+01     0.00000000E+00
+dl30a:2                    bety         2     3.00000000E+01     1.52109379E+01     0.00000000E+00
+vader9:11                  bety         2     3.00000000E+01     1.70914316E+01     0.00000000E+00
+vader8:11                  bety         2     3.00000000E+01     1.85906539E+01     0.00000000E+00
+vader7:11                  bety         2     3.00000000E+01     1.97297021E+01     0.00000000E+00
+vader6:11                  bety         2     3.00000000E+01     2.05527688E+01     0.00000000E+00
+vader5:11                  bety         2     3.00000000E+01     2.11156755E+01     0.00000000E+00
+vader4:11                  bety         2     3.00000000E+01     2.14770576E+01     0.00000000E+00
+vader3:11                  bety         2     3.00000000E+01     2.16921387E+01     0.00000000E+00
+vader2:11                  bety         2     3.00000000E+01     2.18087051E+01     0.00000000E+00
+vader1:11                  bety         2     3.00000000E+01     2.18647460E+01     0.00000000E+00
+vader0:11                  bety         2     3.00000000E+01     2.19096019E+01     0.00000000E+00
+vader0:12                  bety         2     3.00000000E+01     2.19545254E+01     0.00000000E+00
+vader1:12                  bety         2     3.00000000E+01     2.19897215E+01     0.00000000E+00
+vader2:12                  bety         2     3.00000000E+01     2.20033802E+01     0.00000000E+00
+vader3:12                  bety         2     3.00000000E+01     2.19562094E+01     0.00000000E+00
+vader4:12                  bety         2     3.00000000E+01     2.17975814E+01     0.00000000E+00
+vader5:12                  bety         2     3.00000000E+01     2.14670417E+01     0.00000000E+00
+vader6:12                  bety         2     3.00000000E+01     2.08973872E+01     0.00000000E+00
+vader7:12                  bety         2     3.00000000E+01     2.00199647E+01     0.00000000E+00
+vader8:12                  bety         2     3.00000000E+01     1.87727669E+01     0.00000000E+00
+vader9:12                  bety         2     3.00000000E+01     1.71116460E+01     0.00000000E+00
+dl27:2                     bety         2     3.00000000E+01     1.28127237E+01     0.00000000E+00
+sexdrift08:31              bety         2     3.00000000E+01     1.11027659E+01     0.00000000E+00
+cv:21                      bety         2     3.00000000E+01     1.11027659E+01     0.00000000E+00
+ch:21                      bety         2     3.00000000E+01     1.11027659E+01     0.00000000E+00
+sd4h1:2                    bety         2     3.00000000E+01     1.11027659E+01     0.00000000E+00
+sexdrift08:32              bety         2     3.00000000E+01     9.51634537E+00     0.00000000E+00
+dl26:2                     bety         2     3.00000000E+01     8.58753956E+00     0.00000000E+00
+bqf1_s02.1:2               bety         2     3.00000000E+01     6.76398133E+00     0.00000000E+00
+dl25:2                     bety         2     3.00000000E+01     6.83546380E+00     0.00000000E+00
+sexdrift10:11              bety         2     3.00000000E+01     6.98176201E+00     0.00000000E+00
+sf3h1:2                    bety         2     3.00000000E+01     6.98176201E+00     0.00000000E+00
+sexdrift10:12              bety         2     3.00000000E+01     7.13242689E+00     0.00000000E+00
+dl24:2                     bety         2     3.00000000E+01     7.14773772E+00     0.00000000E+00
+dmon:41                    bety         2     3.00000000E+01     7.18620919E+00     0.00000000E+00
+dmon:42                    bety         2     3.00000000E+01     7.22495832E+00     0.00000000E+00
+dl23:2                     bety         2     3.00000000E+01     7.25615755E+00     0.00000000E+00
+dcor:9                     bety         2     3.00000000E+01     7.35082149E+00     0.00000000E+00
+cv:22                      bety         2     3.00000000E+01     7.35082149E+00     0.00000000E+00
+ch:22                      bety         2     3.00000000E+01     7.35082149E+00     0.00000000E+00
+oct2_l:2                   bety         2     3.00000000E+01     7.35082149E+00     0.00000000E+00
+dcor:10                    bety         2     3.00000000E+01     7.44708481E+00     0.00000000E+00
+dl22:2                     bety         2     3.00000000E+01     7.51214891E+00     0.00000000E+00
+qf2_s02.1:2                bety         2     3.00000000E+01     1.06376034E+01     0.00000000E+00
+dl21:2                     bety         2     3.00000000E+01     1.20356583E+01     0.00000000E+00
+sexdrift08:33              bety         2     3.00000000E+01     1.44529431E+01     0.00000000E+00
+skew:5                     bety         2     3.00000000E+01     1.44529431E+01     0.00000000E+00
+sd5h1:2                    bety         2     3.00000000E+01     1.44529431E+01     0.00000000E+00
+sexdrift08:34              bety         2     3.00000000E+01     1.70923140E+01     0.00000000E+00
+dl20b:2                    bety         2     3.00000000E+01     1.81393219E+01     0.00000000E+00
+dmon:43                    bety         2     3.00000000E+01     1.90356801E+01     0.00000000E+00
+mon:16                     bety         2     3.00000000E+01     1.90356801E+01     0.00000000E+00
+dmon:44                    bety         2     3.00000000E+01     1.99537215E+01     0.00000000E+00
+dl20a:2                    bety         2     3.00000000E+01     2.18548543E+01     0.00000000E+00
+bf1:3                      bety         2     3.00000000E+01     2.45826136E+01     0.00000000E+00
+dl19:2                     bety         2     3.00000000E+01     2.23162945E+01     0.00000000E+00
+dl18:2                     bety         2     3.00000000E+01     1.92108642E+01     0.00000000E+00
+qd2_s02.1:2                bety         2     3.00000000E+01     1.61261229E+01     0.00000000E+00
+dl17:2                     bety         2     3.00000000E+01     1.52182730E+01     0.00000000E+00
+dmon:45                    bety         2     3.00000000E+01     1.45274060E+01     0.00000000E+00
+mon:17                     bety         2     3.00000000E+01     1.45274060E+01     0.00000000E+00
+dmon:46                    bety         2     3.00000000E+01     1.38526711E+01     0.00000000E+00
 
 
-Final Penalty Function =   3.83438461e+05
+Final Penalty Function =   1.56299607e-25
 
 
 
@@ -1740,223 +1746,67 @@ Final Penalty Function =   3.83438461e+05
 
 Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
 --------------------------------------------------------------------------------
-k1_qd1                   -3.42000e+00 -3.42000e+00 -1.00000e+20  1.00000e+20
-k1_qf1                    5.75310e+00  5.75310e+00 -1.00000e+20  1.00000e+20
-k1_qd2                   -5.30000e-01 -5.30000e-01 -1.00000e+20  1.00000e+20
-k1_qf2                    5.49957e+00  5.49957e+00 -1.00000e+20  1.00000e+20
-k1_bqf1                   5.19162e+00  5.19162e+00 -1.00000e+20  1.00000e+20
-k1_bqf2                   5.19162e+00  5.19162e+00 -1.00000e+20  1.00000e+20
-k1_bqf3                   5.19162e+00  5.19162e+00 -1.00000e+20  1.00000e+20
-k1_bqf4                   5.19162e+00  5.19162e+00 -1.00000e+20  1.00000e+20
+k1_qd1                   -3.42537e+00 -3.42000e+00 -4.00000e+00 -3.00000e+00
+k1_qf1                    5.72881e+00  5.75310e+00  5.00000e+00  6.00000e+00
+k1_qd2                   -5.45053e-01 -5.30000e-01 -1.00000e+00  0.00000e+00
+k1_qf2                    5.47876e+00  5.49957e+00  5.00000e+00  6.00000e+00
+k1_bqf1                   5.16843e+00  5.19162e+00  5.00000e+00  6.00000e+00
+k1_bqf2                   5.19327e+00  5.19162e+00  5.00000e+00  6.00000e+00
+k1_bqf3                   5.18956e+00  5.19162e+00  5.00000e+00  6.00000e+00
+k1_bqf4                   5.15405e+00  5.19162e+00  5.00000e+00  6.00000e+00
 
 END MATCH SUMMARY
 
-VARIABLE "TAR" SET TO   3.83438461e+05
+VARIABLE "TAR" SET TO   1.56299607e-25
 enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
-
-                q1                dq1            betxmax              dxmax 
-       34.08767615        14.54867636        12.02467488      0.06859292713 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
-
-               dq2            betymax              dymax              dyrms 
-       102.7349117        136.8073112                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-dl16:2                     bety         2     3.00000000E+01     7.19941171E+01     1.76350587E+03
-sexdrift06:11              bety         2     3.00000000E+01     6.38339594E+01     1.14473681E+03
-cv:23                      bety         2     3.00000000E+01     6.38339594E+01     1.14473681E+03
-ch:23                      bety         2     3.00000000E+01     6.38339594E+01     1.14473681E+03
-sex2h1:2                   bety         2     3.00000000E+01     6.38339594E+01     1.14473681E+03
-sexdrift06:12              bety         2     3.00000000E+01     5.61645848E+01     6.84585496E+02
-dl15:2                     bety         2     3.00000000E+01     4.39241394E+01     1.93881657E+02
-qf1_s02.1:2                bety         2     3.00000000E+01     3.20813569E+01     4.33204655E+00
-dl14:2                     bety         2     3.00000000E+01     3.20857475E+01     4.35034266E+00
-dl13:2                     bety         2     3.00000000E+01     3.20873897E+01     4.35719567E+00
-sexdrift06:13              bety         2     3.00000000E+01     3.20914900E+01     4.37433050E+00
-skew:6                     bety         2     3.00000000E+01     3.20914900E+01     4.37433050E+00
-sex1h1:2                   bety         2     3.00000000E+01     3.20914900E+01     4.37433050E+00
-sexdrift06:14              bety         2     3.00000000E+01     3.20958201E+01     4.39246174E+00
-dl12:2                     bety         2     3.00000000E+01     3.21013127E+01     4.41551485E+00
-qd1_s02.1:2                bety         2     3.00000000E+01     3.08919087E+01     7.95501170E-01
-dl11:2                     bety         2     3.00000000E+01     2.99943995E+01     0.00000000E+00
-dcor:11                    bety         2     3.00000000E+01     2.86731402E+01     0.00000000E+00
-cv:24                      bety         2     3.00000000E+01     2.86731402E+01     0.00000000E+00
-ch:24                      bety         2     3.00000000E+01     2.86731402E+01     0.00000000E+00
-oct1_l:2                   bety         2     3.00000000E+01     2.86731402E+01     0.00000000E+00
-dcor:12                    bety         2     3.00000000E+01     2.73818865E+01     0.00000000E+00
-dl10:2                     bety         2     3.00000000E+01     2.67054868E+01     0.00000000E+00
-dmon:47                    bety         2     3.00000000E+01     2.61829881E+01     0.00000000E+00
-mon:18                     bety         2     3.00000000E+01     2.61829881E+01     0.00000000E+00
-dmon:48                    bety         2     3.00000000E+01     2.56656987E+01     0.00000000E+00
-ll:3                       bety         2     3.00000000E+01     2.39964352E-01     0.00000000E+00
-right_marker:1             bety         4     1.40383100E+00     2.39964352E-01     1.35458557E+00
-right_marker:1             betx         4     8.37358900E+00     8.34809446E+00     6.49971400E-04
-right_marker:1             dx           4     0.00000000E+00    -9.67426718E-03     9.35914455E-03
+dl16:2                     bety         2     3.00000000E+01     1.30642837E+01     0.00000000E+00
+sexdrift06:11              bety         2     3.00000000E+01     1.15571999E+01     0.00000000E+00
+cv:23                      bety         2     3.00000000E+01     1.15571999E+01     0.00000000E+00
+ch:23                      bety         2     3.00000000E+01     1.15571999E+01     0.00000000E+00
+sex2h1:2                   bety         2     3.00000000E+01     1.15571999E+01     0.00000000E+00
+sexdrift06:12              bety         2     3.00000000E+01     1.01430352E+01     0.00000000E+00
+dl15:2                     bety         2     3.00000000E+01     7.89183971E+00     0.00000000E+00
+qf1_s02.1:2                bety         2     3.00000000E+01     5.67116754E+00     0.00000000E+00
+dl14:2                     bety         2     3.00000000E+01     5.64316938E+00     0.00000000E+00
+dl13:2                     bety         2     3.00000000E+01     5.63360668E+00     0.00000000E+00
+sexdrift06:13              bety         2     3.00000000E+01     5.61159381E+00     0.00000000E+00
+skew:6                     bety         2     3.00000000E+01     5.61159381E+00     0.00000000E+00
+sex1h1:2                   bety         2     3.00000000E+01     5.61159381E+00     0.00000000E+00
+sexdrift06:14              bety         2     3.00000000E+01     5.59090629E+00     0.00000000E+00
+dl12:2                     bety         2     3.00000000E+01     5.56782855E+00     0.00000000E+00
+qd1_s02.1:2                bety         2     3.00000000E+01     5.32656625E+00     0.00000000E+00
+dl11:2                     bety         2     3.00000000E+01     5.16073145E+00     0.00000000E+00
+dcor:11                    bety         2     3.00000000E+01     4.91804085E+00     0.00000000E+00
+cv:24                      bety         2     3.00000000E+01     4.91804085E+00     0.00000000E+00
+ch:24                      bety         2     3.00000000E+01     4.91804085E+00     0.00000000E+00
+oct1_l:2                   bety         2     3.00000000E+01     4.91804085E+00     0.00000000E+00
+dcor:12                    bety         2     3.00000000E+01     4.68262418E+00     0.00000000E+00
+dl10:2                     bety         2     3.00000000E+01     4.56004285E+00     0.00000000E+00
+dmon:47                    bety         2     3.00000000E+01     4.46571581E+00     0.00000000E+00
+mon:18                     bety         2     3.00000000E+01     4.46571581E+00     0.00000000E+00
+dmon:48                    bety         2     3.00000000E+01     4.37265161E+00     0.00000000E+00
+ll:3                       bety         2     3.00000000E+01     1.40383100E+00     0.00000000E+00
+right_marker:1             bety         4     1.40383100E+00     1.40383100E+00     8.43521077E-26
+right_marker:1             betx         4     8.37358900E+00     8.37358900E+00     7.19472700E-26
+right_marker:1             dx           4     0.00000000E+00    -4.78638367E-17     2.29094686E-31
 right_marker:1             dy           4     0.00000000E+00     0.00000000E+00     0.00000000E+00
   
-iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
-orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
+iteration:   1 error:   2.179154E-04 deltap:   0.000000E+00
+orbit:  -6.960987E-07  5.550250E-07  0.000000E+00  0.000000E+00  2.497323E-02 -4.497031E-06
   
-iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
-orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
+iteration:   2 error:   2.491541E-06 deltap:   0.000000E+00
+orbit:  -6.938757E-07  5.549921E-07  0.000000E+00  0.000000E+00  2.526882E-02 -4.542838E-06
   
-iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
-orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
-orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
-  
-iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
-orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
-  
-iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
-orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
+iteration:   3 error:   1.220853E-09 deltap:   0.000000E+00
+orbit:  -6.938759E-07  5.549919E-07  0.000000E+00  0.000000E+00  2.526896E-02 -4.542886E-06
+++++++ warning: TWCLORB:  Vertical plane might be unstable More information with the debug flag on.                                                                                                                                                                                 
+++++++ warning: TWCPIN:  One-turn map R symplectic deviation:  0.407454E-09 (symplectifying R)                                                                                                               
+++++++ warning: TWCPIN:  Mode 2 is unstable for delta(p)/p =     0.000000: cosmux =    -0.271432, cosmuy =   238.580902                                                        
+++++++ warning: Twiss failed:  MAD-X continues
 
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
-
-                q1                dq1            betxmax              dxmax 
-       34.08767615        14.54867636        12.02467488      0.06859292713 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
-
-               dq2            betymax              dymax              dyrms 
-       102.7349117        136.8073112                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
-
-                q1                dq1            betxmax              dxmax 
-       34.08767615        14.54867636        12.02467488      0.06859292713 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
-
-               dq2            betymax              dymax              dyrms 
-       102.7349117        136.8073112                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
-
-                q1                dq1            betxmax              dxmax 
-       34.08767615        14.54867636        12.02467488      0.06859292713 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
-
-               dq2            betymax              dymax              dyrms 
-       102.7349117        136.8073112                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-enter Twiss module
-
-++++++ table: summ
-
-            length             orbit5               alfa            gammatr 
-       259.2000005     -0.02526878173    0.0003380164287        54.39150747 
-
-                q1                dq1            betxmax              dxmax 
-       34.08767615        14.54867636        12.02467488      0.06859292713 
-
-             dxrms             xcomax             xcorms                 q2 
-     0.03727852402    1.846557711e-05    6.938603189e-06         11.6537072 
-
-               dq2            betymax              dymax              dyrms 
-       102.7349117        136.8073112                  0                  0 
-
-            ycomax             ycorms             deltap            synch_1 
-                 0                  0                  0                  0 
-
-           synch_2            synch_3            synch_4            synch_5 
-                 0                  0                  0                  0 
-
-           synch_6            synch_8             nflips 
-                 0                  0                  0 
-
-  Number of warnings: 40
-10 in C and 30 in Fortran
+  Number of warnings: 73
+10 in C and 63 in Fortran
 
   ++++++++++++++++++++++++++++++++++++++++++++
   +          MAD-X finished normally         +
   ++++++++++++++++++++++++++++++++++++++++++++
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
-orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
-  
-iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
-orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
-  
-iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
-orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
-orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
-  
-iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
-orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
-  
-iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
-orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
-  
-iteration:   1 error:   2.179156E-04 deltap:   0.000000E+00
-orbit:  -7.177124E-07 -1.607598E-06  0.000000E+00  0.000000E+00  2.497304E-02 -4.495609E-06
-  
-iteration:   2 error:   2.491659E-06 deltap:   0.000000E+00
-orbit:  -6.976585E-07 -1.577736E-06  0.000000E+00  0.000000E+00  2.526864E-02 -4.530932E-06
-  
-iteration:   3 error:   1.222292E-09 deltap:   0.000000E+00
-orbit:  -6.977467E-07 -1.577739E-06  0.000000E+00  0.000000E+00  2.526878E-02 -4.530978E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
