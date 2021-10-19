@@ -3,7 +3,7 @@
   +     MAD-X 5.07.00  (64 bit, Darwin)      +
   + Support: mad@cern.ch, http://cern.ch/mad +
   + Release   date: 2021.05.03               +
-  + Execution date: 2021.10.13 15:45:50      +
+  + Execution date: 2021.10.19 18:00:34      +
   ++++++++++++++++++++++++++++++++++++++++++++
 !One achromat of the S6BA-E lattice of Elettra 2.0 created by Emanuel Karantzoulis D.Phil.
 
@@ -1736,21 +1736,714 @@ enter EMIT module
 
  RF system: 
  Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
 enter Twiss module
 
 ++++++ table: summ
 
             length             orbit5               alfa            gammatr 
-       259.2000005     -0.02291162609    0.0003044193904        57.31441237 
+       259.2000005      -0.0255194259    0.0003102707426        56.77139781 
 
                 q1                dq1            betxmax              dxmax 
-       34.06015768       -2.530519973        11.73235333      0.08343393838 
+       34.08522157        5.728634358        11.77312282       0.1476564986 
 
              dxrms             xcomax             xcorms                 q2 
-     0.03266312389    1.159638439e-05    4.655746275e-06        9.801872861 
+     0.06621877318    1.901990006e-05     7.13119832e-06        9.429443486 
 
                dq2            betymax              dymax              dyrms 
-       8.317931804        22.65881369                  0                  0 
+       27.37276248         20.0838912                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
+                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
+                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
+                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
+                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
+                             damped                0.05749751          0.80968880          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
+                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
+                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
+                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
+                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
+                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
+                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
+                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
+                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
+  
+iteration:   1 error:   2.200264E-04 deltap:   0.000000E+00
+orbit:  -7.649016E-07 -1.659856E-06  0.000000E+00  0.000000E+00  2.521476E-02 -4.361982E-06
+  
+iteration:   2 error:   2.565131E-06 deltap:   0.000000E+00
+orbit:  -7.888159E-07 -1.598342E-06  0.000000E+00  0.000000E+00  2.551927E-02 -4.572453E-06
+  
+iteration:   3 error:   1.283592E-09 deltap:   0.000000E+00
+orbit:  -7.889578E-07 -1.598335E-06  0.000000E+00  0.000000E+00  2.551943E-02 -4.572543E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.025208E-04 deltap:   0.000000E+00
+orbit:  -6.144783E-07 -1.511231E-06  0.000000E+00  0.000000E+00  2.320858E-02 -4.090258E-06
+  
+iteration:   2 error:   2.002606E-06 deltap:   0.000000E+00
+orbit:  -6.335086E-07 -1.467370E-06  0.000000E+00  0.000000E+00  2.344502E-02 -4.211510E-06
+  
+iteration:   3 error:   7.489624E-10 deltap:   0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02344511311    0.0002956710835        58.15614003 
+
+                q1                dq1            betxmax              dxmax 
+       34.07737107        3.693263131        11.76086576       0.1144054834 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.05510830831    1.646309543e-05    6.406198633e-06        9.508468712 
+
+               dq2            betymax              dymax              dyrms 
+       23.43493163        20.58776215                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02223005448    0.0002885819279        58.86612317 
+
+                q1                dq1            betxmax              dxmax 
+       34.07082708        1.791313457        11.75095429      0.08145719014 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.04523173398    1.434526511e-05    5.815292382e-06        9.589434245 
+
+               dq2            betymax              dymax              dyrms 
+       19.36701554        21.07278515                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02186593245    0.0002891206528        58.81125432 
+
+                q1                dq1            betxmax              dxmax 
+       34.06558559   -0.0005819646927        11.74281508       0.0736215951 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03743445213     1.28161612e-05    5.323484395e-06        9.672559709 
+
+               dq2            betymax              dymax              dyrms 
+       15.12473805        21.65131995                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02235040968    0.0002973767535         57.9891165 
+
+                q1                dq1            betxmax              dxmax 
+       34.06164296       -1.704681057        11.73574453      0.08014835912 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03309198354    1.200099294e-05    4.879515351e-06        9.758102233 
+
+               dq2            betymax              dymax              dyrms 
+       10.65607717        22.30221512                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02368661227    0.0003134127521        56.48611014 
+
+                q1                dq1            betxmax              dxmax 
+       34.05899592       -3.342376135        11.72890827      0.08686025429 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03348419062    1.116917761e-05    4.419743779e-06        9.846366346 
+
+               dq2            betymax              dymax              dyrms 
+       5.898887409        23.03909164                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02588381855    0.0003372649313        54.45207163 
+
+                q1                dq1            betxmax              dxmax 
+       34.05764165       -4.934396757        11.72139361       0.0939930595 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03841554043    1.017116591e-05    3.883794752e-06          9.9377178 
+
+               dq2            betymax              dymax              dyrms 
+      0.7767477727         23.8735411                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02895945013    0.0003689439175        52.06187709 
+
+                q1                dq1            betxmax              dxmax 
+       34.05757781        -6.50095379        11.71403478       0.1010239091 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.04644091611    8.870578073e-06     3.25111203e-06        10.03260285 
+
+               dq2            betymax              dymax              dyrms 
+        -4.8070053        24.88809522                 -0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+orbit:  -6.336125E-07 -1.467365E-06  0.000000E+00  0.000000E+00  2.344511E-02 -4.211565E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.922214E-04 deltap:   0.000000E+00
+orbit:  -5.009687E-07 -1.381779E-06  0.000000E+00  0.000000E+00  2.202828E-02 -3.930894E-06
+  
+iteration:   2 error:   1.713548E-06 deltap:   0.000000E+00
+orbit:  -5.170193E-07 -1.350854E-06  0.000000E+00  0.000000E+00  2.222999E-02 -4.000037E-06
+  
+iteration:   3 error:   5.390960E-10 deltap:   0.000000E+00
+orbit:  -5.170965E-07 -1.350850E-06  0.000000E+00  0.000000E+00  2.223005E-02 -4.000075E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.891287E-04 deltap:   0.000000E+00
+orbit:  -4.158681E-07 -1.265895E-06  0.000000E+00  0.000000E+00  2.167387E-02 -3.897340E-06
+  
+iteration:   2 error:   1.632458E-06 deltap:   0.000000E+00
+orbit:  -4.286371E-07 -1.245043E-06  0.000000E+00  0.000000E+00  2.186587E-02 -3.938149E-06
+  
+iteration:   3 error:   4.891749E-10 deltap:   0.000000E+00
+orbit:  -4.286936E-07 -1.245040E-06  0.000000E+00  0.000000E+00  2.186593E-02 -3.938181E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.932425E-04 deltap:   0.000000E+00
+orbit:  -3.519918E-07 -1.153257E-06  0.000000E+00  0.000000E+00  2.214537E-02 -3.997394E-06
+  
+iteration:   2 error:   1.740706E-06 deltap:   0.000000E+00
+orbit:  -3.585432E-07 -1.141127E-06  0.000000E+00  0.000000E+00  2.235034E-02 -4.025986E-06
+  
+iteration:   3 error:   5.625168E-10 deltap:   0.000000E+00
+orbit:  -3.585796E-07 -1.141124E-06  0.000000E+00  0.000000E+00  2.235041E-02 -4.026017E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.045628E-04 deltap:   0.000000E+00
+orbit:  -3.044790E-07 -1.029351E-06  0.000000E+00  0.000000E+00  2.344277E-02 -4.234389E-06
+  
+iteration:   2 error:   2.063153E-06 deltap:   0.000000E+00
+orbit:  -2.975852E-07 -1.025765E-06  0.000000E+00  0.000000E+00  2.368652E-02 -4.263670E-06
+  
+iteration:   3 error:   8.111923E-10 deltap:   0.000000E+00
+orbit:  -2.975954E-07 -1.025763E-06  0.000000E+00  0.000000E+00  2.368661E-02 -4.263707E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.230892E-04 deltap:   0.000000E+00
+orbit:  -2.720139E-07 -8.777978E-07  0.000000E+00  0.000000E+00  2.556605E-02 -4.608086E-06
+  
+iteration:   2 error:   2.672636E-06 deltap:   0.000000E+00
+orbit:  -2.370532E-07 -8.833183E-07  0.000000E+00  0.000000E+00  2.588365E-02 -4.651309E-06
+  
+iteration:   3 error:   1.430507E-09 deltap:   0.000000E+00
+orbit:  -2.370206E-07 -8.833174E-07  0.000000E+00  0.000000E+00  2.588382E-02 -4.651362E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.488213E-04 deltap:   0.000000E+00
+orbit:  -2.580768E-07 -6.842261E-07  0.000000E+00  0.000000E+00  2.851517E-02 -5.115298E-06
+  
+iteration:   2 error:   3.702216E-06 deltap:   0.000000E+00
+orbit:  -1.684170E-07 -6.995670E-07  0.000000E+00  0.000000E+00  2.895909E-02 -5.189052E-06
+  
+iteration:   3 error:   2.972710E-09 deltap:   0.000000E+00
+orbit:  -1.683042E-07 -6.995689E-07  0.000000E+00  0.000000E+00  2.895945E-02 -5.189139E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   2.817583E-04 deltap:   0.000000E+00
+orbit:  -2.718314E-07 -4.403775E-07  0.000000E+00  0.000000E+00  3.229009E-02 -5.750317E-06
+  
+iteration:   2 error:   5.364993E-06 deltap:   0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.03294268045    0.0004084351411        49.48099788 
+
+                q1                dq1            betxmax              dxmax 
+       34.05880273       -8.061832062        11.71289036       0.1122494311 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.05624994837     9.06917673e-06    2.629022711e-06        10.13157647 
+
+               dq2            betymax              dymax              dyrms 
+      -10.97838138         25.9871183                 -0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.03788036192    0.0004556991951        46.84474393 
+
+                q1                dq1            betxmax              dxmax 
+       34.06131536       -9.636487575        11.72568906       0.1441188225 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.06707731007    1.118308627e-05    2.432874069e-06        10.23534336 
+
+               dq2            betymax              dymax              dyrms 
+      -17.90741302        27.30354322                 -0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02285237945    0.0003037057388        57.38171192 
+
+                q1                dq1            betxmax              dxmax 
+        34.0602781         -2.4568056        11.73265902       0.0831384028 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03265013785    1.163343925e-05    4.676266928e-06        9.797904578 
+
+               dq2            betymax              dymax              dyrms 
+       8.531537131        22.62572953                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005      -0.0228653958    0.0003038629626        57.36686487 
+
+                q1                dq1            betxmax              dxmax 
+       34.06025111       -2.473196454        11.73259112      0.08320408718 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03265213948    1.162521991e-05    4.671715095e-06        9.798785914 
+
+               dq2            betymax              dymax              dyrms 
+       8.484125497        22.63306571                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02287849761    0.0003040209666        57.35195574 
+
+                q1                dq1            betxmax              dxmax 
+       34.06022426       -2.489581644         11.7325232       0.0832697659 
+
+             dxrms             xcomax             xcorms                 q2 
+      0.0326546465    1.161699209e-05    4.667158566e-06        9.799667539 
+
+               dq2            betymax              dymax              dyrms 
+       8.436681802        22.64041094                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02289168489    0.0003041797509         57.3369847 
+
+                q1                dq1            betxmax              dxmax 
+       34.06019753        -2.50596119        11.73245527      0.08333543903 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03265765873    1.160875563e-05    4.662597277e-06        9.800549451 
+
+               dq2            betymax              dymax              dyrms 
+       8.389205971        22.64776524                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02290495765    0.0003043393155        57.32195188 
+
+                q1                dq1            betxmax              dxmax 
+       34.06017093       -2.522335114        11.73238731      0.08340110663 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266117596    1.160051037e-05    4.658031162e-06        9.801431652 
+
+               dq2            betymax              dymax              dyrms 
+       8.341697928         22.6551286                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+orbit:  -8.302518E-08 -4.657002E-07  0.000000E+00  0.000000E+00  3.294183E-02 -5.877160E-06
+  
+iteration:   3 error:   6.975830E-09 deltap:   0.000000E+00
+orbit:  -8.274487E-08 -4.657106E-07  0.000000E+00  0.000000E+00  3.294268E-02 -5.877324E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   3.218994E-04 deltap:   0.000000E+00
+orbit:  -3.282919E-07 -1.466266E-07  0.000000E+00  0.000000E+00  3.689074E-02 -6.505198E-06
+  
+iteration:   2 error:   7.981047E-06 deltap:   0.000000E+00
+orbit:   2.814499E-08 -1.808706E-07  0.000000E+00  0.000000E+00  3.787816E-02 -6.716049E-06
+  
+iteration:   3 error:   1.774964E-08 deltap:   0.000000E+00
+orbit:   2.880934E-08 -1.809029E-07  0.000000E+00  0.000000E+00  3.788036E-02 -6.716383E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.974997E-04 deltap:   0.000000E+00
+orbit:  -3.285210E-07 -1.099257E-06  0.000000E+00  0.000000E+00  2.263329E-02 -4.088188E-06
+  
+iteration:   2 error:   1.857698E-06 deltap:   0.000000E+00
+orbit:  -3.302059E-07 -1.090980E-06  0.000000E+00  0.000000E+00  2.285230E-02 -4.115547E-06
+  
+iteration:   3 error:   6.468478E-10 deltap:   0.000000E+00
+orbit:  -3.302316E-07 -1.090978E-06  0.000000E+00  0.000000E+00  2.285238E-02 -4.115580E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.976100E-04 deltap:   0.000000E+00
+orbit:  -3.280405E-07 -1.098033E-06  0.000000E+00  0.000000E+00  2.264593E-02 -4.090503E-06
+  
+iteration:   2 error:   1.860797E-06 deltap:   0.000000E+00
+orbit:  -3.295979E-07 -1.089841E-06  0.000000E+00  0.000000E+00  2.286532E-02 -4.117864E-06
+  
+iteration:   3 error:   6.491706E-10 deltap:   0.000000E+00
+orbit:  -3.296234E-07 -1.089839E-06  0.000000E+00  0.000000E+00  2.286540E-02 -4.117897E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.977211E-04 deltap:   0.000000E+00
+orbit:  -3.275615E-07 -1.096806E-06  0.000000E+00  0.000000E+00  2.265866E-02 -4.092832E-06
+  
+iteration:   2 error:   1.863920E-06 deltap:   0.000000E+00
+orbit:  -3.289905E-07 -1.088700E-06  0.000000E+00  0.000000E+00  2.287842E-02 -4.120195E-06
+  
+iteration:   3 error:   6.515160E-10 deltap:   0.000000E+00
+orbit:  -3.290158E-07 -1.088698E-06  0.000000E+00  0.000000E+00  2.287850E-02 -4.120229E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.978328E-04 deltap:   0.000000E+00
+orbit:  -3.270840E-07 -1.095578E-06  0.000000E+00  0.000000E+00  2.267147E-02 -4.095174E-06
+  
+iteration:   2 error:   1.867067E-06 deltap:   0.000000E+00
+orbit:  -3.283836E-07 -1.087557E-06  0.000000E+00  0.000000E+00  2.289161E-02 -4.122542E-06
+  
+iteration:   3 error:   6.538840E-10 deltap:   0.000000E+00
+orbit:  -3.284086E-07 -1.087554E-06  0.000000E+00  0.000000E+00  2.289168E-02 -4.122576E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.979453E-04 deltap:   0.000000E+00
+orbit:  -3.266080E-07 -1.094348E-06  0.000000E+00  0.000000E+00  2.268436E-02 -4.097531E-06
+  
+iteration:   2 error:   1.870238E-06 deltap:   0.000000E+00
+orbit:  -3.277772E-07 -1.086412E-06  0.000000E+00  0.000000E+00  2.290488E-02 -4.124904E-06
+  
+iteration:   3 error:   6.562749E-10 deltap:   0.000000E+00
+orbit:  -3.278019E-07 -1.086409E-06  0.000000E+00  0.000000E+00  2.290496E-02 -4.124937E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.980585E-04 deltap:   0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005      -0.0229183159    0.0003044996604        57.30685746 
+
+                q1                dq1            betxmax              dxmax 
+       34.06014446       -2.538703435        11.73231933      0.08346676877 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266519798    1.159225616e-05    4.653460157e-06        9.802314141 
+
+               dq2            betymax              dymax              dyrms 
+       8.294157598        22.66250106                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02293175965    0.0003046607857        57.29170158 
+
+                q1                dq1            betxmax              dxmax 
+       34.06011812       -2.555066174        11.73225134       0.0835324255 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266972454    1.158399285e-05    4.648884198e-06         9.80319692 
+
+               dq2            betymax              dymax              dyrms 
+       8.246584905        22.66988262                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02294528891    0.0003048226913        57.27648441 
+
+                q1                dq1            betxmax              dxmax 
+       34.06009191       -2.571423353        11.73218331      0.08359807689 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03267475537    1.157572028e-05     4.64430322e-06        9.804079989 
+
+               dq2            betymax              dymax              dyrms 
+       8.198979773         22.6772733                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02295890368    0.0003049853774        57.26120608 
+
+                q1                dq1            betxmax              dxmax 
+       34.06006583       -2.587774991        11.73211527      0.08366372302 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03268029018     1.15674383e-05    4.639717159e-06        9.804963347 
+
+               dq2            betymax              dymax              dyrms 
+       8.151342126        22.68467312                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02297260398     0.000305148844        57.24586677 
+
+                q1                dq1            betxmax              dxmax 
+       34.06003988        -2.60412111         11.7320472      0.08372936393 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03268632865    1.155914676e-05    4.635125951e-06        9.805846995 
+
+               dq2            betymax              dymax              dyrms 
+       8.103671888        22.69208208                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162549    0.0003044193832        57.31441304 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530519237        11.73235333      0.08343393542 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312371    1.159638476e-05    4.655746481e-06        9.801872821 
+
+               dq2            betymax              dymax              dyrms 
+       8.317933943        22.65881336                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -1765,67 +2458,78 @@ enter EMIT module
  Global parameters for electrons, radiate = T:
 
  C                259.2000005 m          f0               1.156606341 MHz
- T0              0.8645984074 musecs     alfa         0.0003060427435 
- eta          0.0003059974962            gamma(tr)        57.16220285 
+ T0              0.8645984074 musecs     alfa         0.0003060427362 
+ eta          0.0003059974889            gamma(tr)        57.16220353 
  Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
  Npart                      1 /bunch     Energy                   2.4 GeV 
  gamma            4701.144689            beta            0.9999999774
- dtbyds       2.906976279e-07
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
-     U0              0.476053 [MeV/turn]
- 
-                                                  M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
-                             damped                0.05749751          0.80968880          0.00412330
- 
- beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
-                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
-                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
- 
- gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
-                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
+ dtbyds        2.90697621e-07
+orbit:  -3.261335E-07 -1.093116E-06  0.000000E+00  0.000000E+00  2.269733E-02 -4.099901E-06
+  
+iteration:   2 error:   1.873433E-06 deltap:   0.000000E+00
+orbit:  -3.271712E-07 -1.085265E-06  0.000000E+00  0.000000E+00  2.291824E-02 -4.127281E-06
+  
+iteration:   3 error:   6.586888E-10 deltap:   0.000000E+00
+orbit:  -3.271957E-07 -1.085263E-06  0.000000E+00  0.000000E+00  2.291832E-02 -4.127314E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.981724E-04 deltap:   0.000000E+00
+orbit:  -3.256605E-07 -1.091882E-06  0.000000E+00  0.000000E+00  2.271039E-02 -4.102285E-06
+  
+iteration:   2 error:   1.876651E-06 deltap:   0.000000E+00
+orbit:  -3.265657E-07 -1.084116E-06  0.000000E+00  0.000000E+00  2.293168E-02 -4.129673E-06
+  
+iteration:   3 error:   6.611259E-10 deltap:   0.000000E+00
+orbit:  -3.265899E-07 -1.084114E-06  0.000000E+00  0.000000E+00  2.293176E-02 -4.129706E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.982871E-04 deltap:   0.000000E+00
+orbit:  -3.251889E-07 -1.090646E-06  0.000000E+00  0.000000E+00  2.272353E-02 -4.104682E-06
+  
+iteration:   2 error:   1.879894E-06 deltap:   0.000000E+00
+orbit:  -3.259607E-07 -1.082965E-06  0.000000E+00  0.000000E+00  2.294521E-02 -4.132079E-06
+  
+iteration:   3 error:   6.635864E-10 deltap:   0.000000E+00
+orbit:  -3.259846E-07 -1.082963E-06  0.000000E+00  0.000000E+00  2.294529E-02 -4.132113E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.984024E-04 deltap:   0.000000E+00
+orbit:  -3.247189E-07 -1.089408E-06  0.000000E+00  0.000000E+00  2.273675E-02 -4.107093E-06
+  
+iteration:   2 error:   1.883161E-06 deltap:   0.000000E+00
+orbit:  -3.253561E-07 -1.081812E-06  0.000000E+00  0.000000E+00  2.295883E-02 -4.134501E-06
+  
+iteration:   3 error:   6.660704E-10 deltap:   0.000000E+00
+orbit:  -3.253798E-07 -1.081810E-06  0.000000E+00  0.000000E+00  2.295890E-02 -4.134535E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+  
+iteration:   1 error:   1.985185E-04 deltap:   0.000000E+00
+orbit:  -3.242503E-07 -1.088168E-06  0.000000E+00  0.000000E+00  2.275005E-02 -4.109519E-06
+  
+iteration:   2 error:   1.886452E-06 deltap:   0.000000E+00
+orbit:  -3.247519E-07 -1.080658E-06  0.000000E+00  0.000000E+00  2.297253E-02 -4.136938E-06
+  
+iteration:   3 error:   6.685782E-10 deltap:   0.000000E+00
+orbit:  -3.247753E-07 -1.080656E-06  0.000000E+00  0.000000E+00  2.297260E-02 -4.136972E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
   
 iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
-orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269083E-02 -4.098714E-06
   
 iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
-orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126090E-06
   
-iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
+iteration:   3 error:   6.574788E-10 deltap:   0.000000E+00
 orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
 ++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
      U0              0.476053 [MeV/turn]
  
                                                   M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
-                             damped                0.05749751          0.80968880          0.00412330
+ Fractional tunes            undamped              0.05749751          0.80968876          0.00412339
+                             damped                0.05749751          0.80968876          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.22165075E-41      0.12158306E-03
+                             y                 0.58681627E-34      0.13869936E+01      0.82318029E-32
 ++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
 
  RF system: 
@@ -1835,170 +2539,32 @@ enter EMIT module
  Global parameters for electrons, radiate = T:
 
  C                259.2000005 m          f0               1.156606341 MHz
- T0              0.8645984074 musecs     alfa         0.0003060427435 
- eta          0.0003059974962            gamma(tr)        57.16220285 
+ T0              0.8645984074 musecs     alfa         0.0003060427362 
+ eta          0.0003059974889            gamma(tr)        57.16220353 
  Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
  Npart                      1 /bunch     Energy                   2.4 GeV 
  gamma            4701.144689            beta            0.9999999774
- dtbyds       2.906976279e-07
+ dtbyds        2.90697621e-07
 ++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
 
  RF system: 
  Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
-enter EMIT module
- 
- Global parameters for electrons, radiate = T:
-
- C                259.2000005 m          f0               1.156606341 MHz
- T0              0.8645984074 musecs     alfa         0.0003060427435 
- eta          0.0003059974962            gamma(tr)        57.16220285 
- Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
- Npart                      1 /bunch     Energy                   2.4 GeV 
- gamma            4701.144689            beta            0.9999999774
- dtbyds       2.906976279e-07
- 
- beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
-                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
-                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
- 
- gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
-                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
-     U0              0.476053 [MeV/turn]
- 
-                                                  M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
-                             damped                0.05749751          0.80968880          0.00412330
- 
- beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
-                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
-                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
- 
- gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
-                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
-     U0              0.476053 [MeV/turn]
- 
-                                                  M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
-                             damped                0.05749751          0.80968880          0.00412330
- 
- beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
-++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
-
- RF system: 
- Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
-enter EMIT module
- 
- Global parameters for electrons, radiate = T:
-
- C                259.2000005 m          f0               1.156606341 MHz
- T0              0.8645984074 musecs     alfa         0.0003060427435 
- eta          0.0003059974962            gamma(tr)        57.16220285 
- Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
- Npart                      1 /bunch     Energy                   2.4 GeV 
- gamma            4701.144689            beta            0.9999999774
- dtbyds       2.906976279e-07
-++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
-
- RF system: 
- Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
 enter Twiss module
-                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
-                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
- 
- gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
-                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
-     U0              0.476053 [MeV/turn]
- 
-                                                  M o d e   1         M o d e   2         M o d e   3
- Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
-                             damped                0.05749751          0.80968880          0.00412330
- 
- beta* [m]                   x                 0.84360093E+01      0.46241183E-40      0.12158304E-03
-                             y                 0.77128429E-34      0.13869936E+01      0.62376571E-31
-                             t                 0.33524574E-03      0.48079249E-31      0.30594674E+01
- 
- gamma* [1/m]                px                0.11853997E+00      0.89419262E-40      0.15748712E-07
-                             py                0.65821416E-34      0.72098387E+00      0.13122306E-31
-                             pt                0.57108935E-08      0.24244724E-31      0.32685346E+00
- 
- beta(max) [m]               x                 0.11863451E+02      0.32251383E-38      0.13599888E-02
-                             y                 0.65673863E-32      0.22584719E+02      0.62749906E-31
-                             t                 0.23577383E-02      0.14802322E-29      0.30596674E+01
- 
- gamma(max) [1/m]            px                0.12068472E+02      0.22651710E-38      0.21366832E-07
-                             py                0.75923958E-32      0.15864401E+02      0.13599819E-31
-                             pt                0.34270319E-02      0.10404124E-29      0.32685346E+00
- 
- Damping partition numbers                         1.29265851          1.00094700          1.71018862
- Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
- Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
- Emittances [pi micro m]                       0.11992290E-02      0.11095218E-30      0.32970288E+01
-  
-iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
-orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
-  
-iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
-orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
-  
-iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
-orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
-++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
 
 ++++++ table: summ
 
             length             orbit5               alfa            gammatr 
-       259.2000005     -0.02291162609    0.0003044193904        57.31441237 
+       259.2000005     -0.02291162562    0.0003044193848        57.31441289 
 
                 q1                dq1            betxmax              dxmax 
-       34.06015768       -2.530519973        11.73235333      0.08343393838 
+       34.06015768         -2.5305194        11.73235333      0.08343393608 
 
              dxrms             xcomax             xcorms                 q2 
-     0.03266312389    1.159638439e-05    4.655746275e-06        9.801872861 
+     0.03266312375    1.159638468e-05    4.655746435e-06         9.80187283 
 
                dq2            betymax              dymax              dyrms 
-       8.317931804        22.65881369                  0                  0 
+       8.317933467        22.65881344                  0                  0 
 
             ycomax             ycorms             deltap            synch_1 
                  0                  0                  0                  0 
@@ -2008,10 +2574,1026 @@ orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4
 
            synch_6            synch_8             nflips 
                  0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
 
-  Number of warnings: 63
-13 in C and 50 in Fortran
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427378 
+ eta          0.0003059974905            gamma(tr)        57.16220338 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976226e-07
+                             t                 0.33524581E-03      0.85652606E-32      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.55287899E-42      0.15748714E-07
+                             py                0.73972291E-35      0.72098386E+00      0.73914866E-31
+                             pt                0.57108941E-08      0.21364930E-32      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.53186101E-40      0.13599888E-02
+                             y                 0.16847714E-32      0.22584719E+02      0.10323300E-31
+                             t                 0.23577382E-02      0.20552731E-30      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.37288399E-40      0.21366835E-07
+                             py                0.24309664E-32      0.15864401E+02      0.73914866E-31
+                             pt                0.34270317E-02      0.14409374E-30      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018863
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439823E-02      0.87094182E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.16963303E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968876          0.00412339
+                             damped                0.05749751          0.80968876          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.22165075E-41      0.12158306E-03
+                             y                 0.58681627E-34      0.13869936E+01      0.82318029E-32
+                             t                 0.33524581E-03      0.85652606E-32      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.55287899E-42      0.15748714E-07
+                             py                0.73972291E-35      0.72098386E+00      0.73914866E-31
+                             pt                0.57108941E-08      0.21364930E-32      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.53186101E-40      0.13599888E-02
+                             y                 0.16847714E-32      0.22584719E+02      0.10323300E-31
+                             t                 0.23577382E-02      0.20552731E-30      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.37288399E-40      0.21366835E-07
+                             py                0.24309664E-32      0.15864401E+02      0.73914866E-31
+                             pt                0.34270317E-02      0.14409374E-30      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018863
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439823E-02      0.87094182E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.16963303E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269083E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126090E-06
+  
+iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
 
-  ++++++++++++++++++++++++++++++++++++++++++++
-  +          MAD-X finished normally         +
-  ++++++++++++++++++++++++++++++++++++++++++++
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427378 
+ eta          0.0003059974905            gamma(tr)        57.16220338 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976226e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968877          0.00412339
+                             damped                0.05749751          0.80968877          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.95699294E-41      0.12158306E-03
+                             y                 0.83311151E-34      0.13869936E+01      0.78738625E-32
+                             t                 0.33524579E-03      0.36981125E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.12665136E-40      0.15748714E-07
+                             py                0.84449751E-35      0.72098386E+00      0.18413225E-31
+                             pt                0.57108940E-08      0.48941946E-31      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.54740709E-39      0.13599888E-02
+                             y                 0.11478887E-32      0.22584719E+02      0.78935848E-32
+                             t                 0.23577382E-02      0.21153479E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.38348676E-39      0.21366835E-07
+                             py                0.16575534E-32      0.15864401E+02      0.18599371E-31
+                             pt                0.34270317E-02      0.14819098E-29      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018863
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439822E-02      0.87094181E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.12885117E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968877          0.00412339
+                             damped                0.05749751          0.80968877          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.95699294E-41      0.12158306E-03
+                             y                 0.83311151E-34      0.13869936E+01      0.78738625E-32
+                             t                 0.33524579E-03      0.36981125E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.12665136E-40      0.15748714E-07
+                             py                0.84449751E-35      0.72098386E+00      0.18413225E-31
+                             pt                0.57108940E-08      0.48941946E-31      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.54740709E-39      0.13599888E-02
+                             y                 0.11478887E-32      0.22584719E+02      0.78935848E-32
+                             t                 0.23577382E-02      0.21153479E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.38348676E-39      0.21366835E-07
+                             py                0.16575534E-32      0.15864401E+02      0.18599371E-31
+                             pt                0.34270317E-02      0.14819098E-29      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018863
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439822E-02      0.87094181E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.12885117E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269083E-02 -4.098714E-06
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162576    0.0003044193864        57.31441274 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530519564        11.73235333      0.08343393674 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312379     1.15963846e-05    4.655746389e-06        9.801872838 
+
+               dq2            betymax              dymax              dyrms 
+       8.317932992        22.65881351                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427394 
+ eta          0.0003059974921            gamma(tr)        57.16220322 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976241e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427394 
+ eta          0.0003059974921            gamma(tr)        57.16220322 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976241e-07
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126090E-06
+  
+iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968878          0.00412339
+                             damped                0.05749751          0.80968878          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.11671847E-40      0.12158305E-03
+                             y                 0.13077878E-32      0.13869936E+01      0.19045957E-31
+                             t                 0.33524577E-03      0.45103575E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.51998708E-40      0.15748713E-07
+                             py                0.15088210E-34      0.72098386E+00      0.55442573E-32
+                             pt                0.57108939E-08      0.20093887E-30      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.17963907E-38      0.13599888E-02
+                             y                 0.33065123E-32      0.22584719E+02      0.20862469E-31
+                             t                 0.23577382E-02      0.69418013E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.12609345E-38      0.21366834E-07
+                             py                0.37096172E-32      0.15864401E+02      0.55442573E-32
+                             pt                0.34270318E-02      0.48726354E-29      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439822E-02      0.87094181E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.36636032E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968878          0.00412339
+                             damped                0.05749751          0.80968878          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.11671847E-40      0.12158305E-03
+                             y                 0.13077878E-32      0.13869936E+01      0.19045957E-31
+                             t                 0.33524577E-03      0.45103575E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.51998708E-40      0.15748713E-07
+                             py                0.15088210E-34      0.72098386E+00      0.55442573E-32
+                             pt                0.57108939E-08      0.20093887E-30      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.17963907E-38      0.13599888E-02
+                             y                 0.33065123E-32      0.22584719E+02      0.20862469E-31
+                             t                 0.23577382E-02      0.69418013E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.12609345E-38      0.21366834E-07
+                             py                0.37096172E-32      0.15864401E+02      0.55442573E-32
+                             pt                0.34270318E-02      0.48726354E-29      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265850          1.00094700          1.71018862
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162589     0.000304419388        57.31441259 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530519728        11.73235333      0.08343393739 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312383    1.159638452e-05    4.655746344e-06        9.801872847 
+
+               dq2            betymax              dymax              dyrms 
+       8.317932517        22.65881358                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427411 
+ eta          0.0003059974937            gamma(tr)        57.16220307 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976256e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427411 
+ eta          0.0003059974937            gamma(tr)        57.16220307 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976256e-07
+ Damping constants [1/s]                           0.14828034E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439822E-02      0.87094181E-02      0.50974880E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.36636032E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126090E-06
+  
+iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968879          0.00412339
+                             damped                0.05749751          0.80968878          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.40534135E-41      0.12158305E-03
+                             y                 0.17204170E-33      0.13869936E+01      0.85398874E-33
+                             t                 0.33524576E-03      0.15663626E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.70894542E-42      0.15748713E-07
+                             py                0.14021380E-35      0.72098386E+00      0.77417407E-31
+                             pt                0.57108937E-08      0.27395813E-32      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.88085924E-40      0.13599888E-02
+                             y                 0.17487532E-32      0.22584719E+02      0.86304207E-33
+                             t                 0.23577382E-02      0.34039087E-30      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.61897058E-40      0.21366833E-07
+                             py                0.25296106E-32      0.15864401E+02      0.77471325E-31
+                             pt                0.34270318E-02      0.23918911E-30      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.94400971E-33      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968879          0.00412339
+                             damped                0.05749751          0.80968878          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.40534135E-41      0.12158305E-03
+                             y                 0.17204170E-33      0.13869936E+01      0.85398874E-33
+                             t                 0.33524576E-03      0.15663626E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.70894542E-42      0.15748713E-07
+                             py                0.14021380E-35      0.72098386E+00      0.77417407E-31
+                             pt                0.57108937E-08      0.27395813E-32      0.32685347E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.88085924E-40      0.13599888E-02
+                             y                 0.17487532E-32      0.22584719E+02      0.86304207E-33
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162602    0.0003044193896        57.31441244 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530519891        11.73235333      0.08343393805 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312387    1.159638443e-05    4.655746298e-06        9.801872856 
+
+               dq2            betymax              dymax              dyrms 
+       8.317932041        22.65881366                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427427 
+ eta          0.0003059974954            gamma(tr)        57.16220292 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976272e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427427 
+ eta          0.0003059974954            gamma(tr)        57.16220292 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976272e-07
+                             t                 0.23577382E-02      0.34039087E-30      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.61897058E-40      0.21366833E-07
+                             py                0.25296106E-32      0.15864401E+02      0.77471325E-31
+                             pt                0.34270318E-02      0.23918911E-30      0.32685347E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.94400971E-33      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574789E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968879          0.00412339
+                             damped                0.05749751          0.80968879          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.12830032E-39      0.12158304E-03
+                             y                 0.14915467E-33      0.13869936E+01      0.35754066E-31
+                             t                 0.33524574E-03      0.32436010E-30      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.93870170E-40      0.15748712E-07
+                             py                0.35805008E-34      0.72098387E+00      0.72596241E-33
+                             pt                0.57108936E-08      0.61661158E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.32290546E-38      0.13599888E-02
+                             y                 0.36076623E-32      0.22584719E+02      0.36017290E-31
+                             t                 0.23577383E-02      0.71325992E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.22731708E-38      0.21366833E-07
+                             py                0.37487201E-32      0.15864401E+02      0.80952917E-33
+                             pt                0.34270319E-02      0.50160752E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.65246666E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968879          0.00412339
+                             damped                0.05749751          0.80968879          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.12830032E-39      0.12158304E-03
+                             y                 0.14915467E-33      0.13869936E+01      0.35754066E-31
+                             t                 0.33524574E-03      0.32436010E-30      0.30594674E+01
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162616    0.0003044193912        57.31441229 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530520055        11.73235333      0.08343393871 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312391    1.159638435e-05    4.655746252e-06        9.801872865 
+
+               dq2            betymax              dymax              dyrms 
+       8.317931566        22.65881373                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427443 
+ eta           0.000305997497            gamma(tr)        57.16220277 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976287e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427443 
+ eta           0.000305997497            gamma(tr)        57.16220277 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976287e-07
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.93870170E-40      0.15748712E-07
+                             py                0.35805008E-34      0.72098387E+00      0.72596241E-33
+                             pt                0.57108936E-08      0.61661158E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.32290546E-38      0.13599888E-02
+                             y                 0.36076623E-32      0.22584719E+02      0.36017290E-31
+                             t                 0.23577383E-02      0.71325992E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.22731708E-38      0.21366833E-07
+                             py                0.37487201E-32      0.15864401E+02      0.80952917E-33
+                             pt                0.34270319E-02      0.50160752E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481823E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094180E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.65246666E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574790E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
+                             damped                0.05749751          0.80968880          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.12135156E-40      0.12158304E-03
+                             y                 0.21409985E-33      0.13869936E+01      0.11761636E-31
+                             t                 0.33524573E-03      0.46893944E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.14052221E-40      0.15748712E-07
+                             py                0.91249034E-35      0.72098387E+00      0.14694063E-31
+                             pt                0.57108934E-08      0.54302068E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.62775979E-39      0.13599888E-02
+                             y                 0.97526167E-33      0.22584720E+02      0.11809739E-31
+                             t                 0.23577383E-02      0.24258553E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.43955077E-39      0.21366832E-07
+                             py                0.14160344E-32      0.15864401E+02      0.14811577E-31
+                             pt                0.34270319E-02      0.16985582E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094179E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.20651552E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162629    0.0003044193928        57.31441214 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530520219        11.73235333      0.08343393936 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312395    1.159638427e-05    4.655746206e-06        9.801872874 
+
+               dq2            betymax              dymax              dyrms 
+        8.31793109        22.65881381                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427459 
+ eta          0.0003059974986            gamma(tr)        57.16220262 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976302e-07
+ Fractional tunes            undamped              0.05749751          0.80968880          0.00412339
+                             damped                0.05749751          0.80968880          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.12135156E-40      0.12158304E-03
+                             y                 0.21409985E-33      0.13869936E+01      0.11761636E-31
+                             t                 0.33524573E-03      0.46893944E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.14052221E-40      0.15748712E-07
+                             py                0.91249034E-35      0.72098387E+00      0.14694063E-31
+                             pt                0.57108934E-08      0.54302068E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.62775979E-39      0.13599888E-02
+                             y                 0.97526167E-33      0.22584720E+02      0.11809739E-31
+                             t                 0.23577383E-02      0.24258553E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.43955077E-39      0.21366832E-07
+                             py                0.14160344E-32      0.15864401E+02      0.14811577E-31
+                             pt                0.34270319E-02      0.16985582E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439821E-02      0.87094179E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.20651552E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574790E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968881          0.00412339
+                             damped                0.05749751          0.80968881          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.13691968E-39      0.12158303E-03
+                             y                 0.29047286E-33      0.13869936E+01      0.40804656E-32
+                             t                 0.33524571E-03      0.52909942E-30      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.87893232E-41      0.15748711E-07
+                             py                0.55444641E-35      0.72098387E+00      0.39499998E-31
+                             pt                0.57108933E-08      0.33964626E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.25027722E-38      0.13599888E-02
+                             y                 0.16305496E-32      0.22584720E+02      0.62020085E-32
+                             t                 0.23577383E-02      0.96714751E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.17594381E-38      0.21366831E-07
+                             py                0.23623960E-32      0.15864401E+02      0.39499998E-31
+                             pt                0.34270319E-02      0.67990055E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427459 
+ eta          0.0003059974986            gamma(tr)        57.16220262 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976302e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162642    0.0003044193944        57.31441199 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530520382        11.73235332      0.08343394002 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312399    1.159638419e-05    4.655746161e-06        9.801872883 
+
+               dq2            betymax              dymax              dyrms 
+       8.317930615        22.65881388                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427475 
+ eta          0.0003059975002            gamma(tr)        57.16220247 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976318e-07
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439820E-02      0.87094179E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.93942059E-32      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968881          0.00412339
+                             damped                0.05749751          0.80968881          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.13691968E-39      0.12158303E-03
+                             y                 0.29047286E-33      0.13869936E+01      0.40804656E-32
+                             t                 0.33524571E-03      0.52909942E-30      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.87893232E-41      0.15748711E-07
+                             py                0.55444641E-35      0.72098387E+00      0.39499998E-31
+                             pt                0.57108933E-08      0.33964626E-31      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.25027722E-38      0.13599888E-02
+                             y                 0.16305496E-32      0.22584720E+02      0.62020085E-32
+                             t                 0.23577383E-02      0.96714751E-29      0.30596674E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.17594381E-38      0.21366831E-07
+                             py                0.23623960E-32      0.15864401E+02      0.39499998E-31
+                             pt                0.34270319E-02      0.67990055E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439820E-02      0.87094179E-02      0.50974879E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.93942059E-32      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574790E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968882          0.00412339
+                             damped                0.05749751          0.80968882          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.50115858E-39      0.12158303E-03
+                             y                 0.33680226E-33      0.13869936E+01      0.65279635E-31
+                             t                 0.33524570E-03      0.82244147E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.47767931E-39      0.15748711E-07
+                             py                0.59586453E-34      0.72098387E+00      0.15435119E-30
+                             pt                0.57108932E-08      0.83014610E-32      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.20142930E-37      0.13599888E-02
+                             y                 0.85941858E-32      0.22584720E+02      0.65412279E-31
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427475 
+ eta          0.0003059975002            gamma(tr)        57.16220247 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976318e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162656     0.000304419396        57.31441184 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768       -2.530520546        11.73235332      0.08343394068 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312403     1.15963841e-05    4.655746115e-06        9.801872891 
+
+               dq2            betymax              dymax              dyrms 
+        8.31793014        22.65881395                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427491 
+ eta          0.0003059975018            gamma(tr)        57.16220232 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976333e-07
+                             t                 0.23577384E-02      0.14085761E-29      0.30596675E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.14108290E-37      0.21366831E-07
+                             py                0.12391213E-31      0.15864401E+02      0.15591787E-30
+                             pt                0.34270320E-02      0.99099547E-30      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439820E-02      0.87094178E-02      0.50974878E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.10660286E-30      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968882          0.00412339
+                             damped                0.05749751          0.80968882          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.50115858E-39      0.12158303E-03
+                             y                 0.33680226E-33      0.13869936E+01      0.65279635E-31
+                             t                 0.33524570E-03      0.82244147E-31      0.30594674E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.47767931E-39      0.15748711E-07
+                             py                0.59586453E-34      0.72098387E+00      0.15435119E-30
+                             pt                0.57108932E-08      0.83014610E-32      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.20142930E-37      0.13599888E-02
+                             y                 0.85941858E-32      0.22584720E+02      0.65412279E-31
+                             t                 0.23577384E-02      0.14085761E-29      0.30596675E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.14108290E-37      0.21366831E-07
+                             py                0.12391213E-31      0.15864401E+02      0.15591787E-30
+                             pt                0.34270320E-02      0.99099547E-30      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439820E-02      0.87094178E-02      0.50974878E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.10660286E-30      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574790E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968883          0.00412339
+                             damped                0.05749751          0.80968883          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.22195942E-39      0.12158302E-03
+                             y                 0.56379278E-33      0.13869936E+01      0.19851695E-31
+                             t                 0.33524568E-03      0.85771890E-30      0.30594675E+01
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427491 
+ eta          0.0003059975018            gamma(tr)        57.16220232 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976333e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+++++++ info: angle_bf1 redefined
+enter Twiss module
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       259.2000005     -0.02291162669    0.0003044193976        57.31441169 
+
+                q1                dq1            betxmax              dxmax 
+       34.06015768        -2.53052071        11.73235332      0.08343394133 
+
+             dxrms             xcomax             xcorms                 q2 
+     0.03266312407    1.159638402e-05    4.655746069e-06          9.8018729 
+
+               dq2            betymax              dymax              dyrms 
+       8.317929664        22.65881403                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427507 
+ eta          0.0003059975034            gamma(tr)        57.16220217 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976348e-07
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.36355398E-42      0.15748710E-07
+                             py                0.19856639E-34      0.72098388E+00      0.67670118E-31
+                             pt                0.57108930E-08      0.14048835E-32      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.35959276E-38      0.13599888E-02
+                             y                 0.28272277E-32      0.22584720E+02      0.19883506E-31
+                             t                 0.23577384E-02      0.13895761E-28      0.30596675E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.25346263E-38      0.21366830E-07
+                             py                0.40780598E-32      0.15864401E+02      0.68101700E-31
+                             pt                0.34270320E-02      0.97945692E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439819E-02      0.87094178E-02      0.50974878E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.32760164E-31      0.32970288E+01
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+ Fractional tunes            undamped              0.05749751          0.80968883          0.00412339
+                             damped                0.05749751          0.80968883          0.00412330
+ 
+ beta* [m]                   x                 0.84360093E+01      0.22195942E-39      0.12158302E-03
+                             y                 0.56379278E-33      0.13869936E+01      0.19851695E-31
+                             t                 0.33524568E-03      0.85771890E-30      0.30594675E+01
+ 
+ gamma* [1/m]                px                0.11853997E+00      0.36355398E-42      0.15748710E-07
+                             py                0.19856639E-34      0.72098388E+00      0.67670118E-31
+                             pt                0.57108930E-08      0.14048835E-32      0.32685346E+00
+ 
+ beta(max) [m]               x                 0.11863451E+02      0.35959276E-38      0.13599888E-02
+                             y                 0.28272277E-32      0.22584720E+02      0.19883506E-31
+                             t                 0.23577384E-02      0.13895761E-28      0.30596675E+01
+ 
+ gamma(max) [1/m]            px                0.12068472E+02      0.25346263E-38      0.21366830E-07
+                             py                0.40780598E-32      0.15864401E+02      0.68101700E-31
+                             pt                0.34270320E-02      0.97945692E-29      0.32685346E+00
+ 
+ Damping partition numbers                         1.29265851          1.00094700          1.71018862
+ Damping constants [1/s]                           0.14828035E+03      0.11481824E+03      0.19617506E+03
+ Damping times [s]                                 0.67439819E-02      0.87094178E-02      0.50974878E-02
+ Emittances [pi micro m]                       0.11992290E-02      0.32760164E-31      0.32970288E+01
+  
+iteration:   1 error:   1.980018E-04 deltap:   0.000000E+00
+orbit:  -3.263706E-07 -1.093732E-06  0.000000E+00  0.000000E+00  2.269084E-02 -4.098714E-06
+  
+iteration:   2 error:   1.871832E-06 deltap:   0.000000E+00
+orbit:  -3.274741E-07 -1.085838E-06  0.000000E+00  0.000000E+00  2.291155E-02 -4.126091E-06
+  
+iteration:   3 error:   6.574791E-10 deltap:   0.000000E+00
+orbit:  -3.274987E-07 -1.085836E-06  0.000000E+00  0.000000E+00  2.291163E-02 -4.126124E-06
+++++++ warning: TWCPGO:  TWISS uses the RF system or synchrotron radiation only to find the closed orbit, for optical calculations it ignores both.
+     U0              0.476053 [MeV/turn]
+ 
+                                                  M o d e   1         M o d e   2         M o d e   3
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
+enter EMIT module
+ 
+ Global parameters for electrons, radiate = T:
+
+ C                259.2000005 m          f0               1.156606341 MHz
+ T0              0.8645984074 musecs     alfa         0.0003060427507 
+ eta          0.0003059975034            gamma(tr)        57.16220217 
+ Bcurrent      1.85308815e-13 A/bunch    Kbunch             1 
+ Npart                      1 /bunch     Energy                   2.4 GeV 
+ gamma            4701.144689            beta            0.9999999774
+ dtbyds       2.906976348e-07
+++++++ warning: EMIT: beam not updated, non-zero deltap:             0.00095
+
+ RF system: 
+ Cavity                      length[m]        voltage[MV]                lag          freq[MHz]             harmon
