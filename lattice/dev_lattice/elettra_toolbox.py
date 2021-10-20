@@ -95,7 +95,7 @@ class ScanConfig:
         self.scan_space = np.linspace(self.scan_start, self.scan_end, self.n_points)
         
         
-def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_output_file: Union[str, Path], tol_closed_machine: float = 1e-3) -> pd.Dataframe:
+def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_output_file: Union[str, Path], tol_closed_machine: float = 1e-3) -> pd.DataFrame:
     """
     Scans a parameter among the MADX instance globals, and returns the computed emittances in a pandas DataFrame. 
     
