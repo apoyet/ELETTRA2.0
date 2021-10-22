@@ -120,7 +120,7 @@ def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_outpu
         LOGGER.debug(f"Attempting emittance calculation for value of {param_value:.5f}")
         madx.globals[parameter_space.variable_name] = param_value
         try:
-            madx.command.twiss()
+            madx.twiss()
             check_closed_machine(madx, tol=tol_closed_machine)
             madx.command.emit(deltap=madx.globals.deltap)
             madx.command.emit(deltap=madx.globals.deltap)
