@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Tuple, Union, Dict
 import sys
 
-from cpymad.madx import Madx
+from cpymad.madx import Madx, TwissFailed
 
 LOGGER = logging.getLogger(name=__name__)
 LOGGER.setLevel(logging.DEBUG)
@@ -95,17 +95,17 @@ class ScanConfig:
         self.scan_space = np.linspace(self.scan_start, self.scan_end, self.n_points)
         
         
-def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_output_file: Union[str, Path]) -> Dict:
+def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_output_file: Union[str, Path], tol_closed_machine: float = 1e-3) -> pd.DataFrame:
     """
     Scans a parameter among the MADX instance globals, and returns the computed emittances in a pandas DataFrame. 
     
     Args:
-        madx (cpymad.madx.Madx): running cpymad MAD-X instance (the one that you are using)
-        parameter_dict (dict): dict containing the information regarding the scan you are performing. This dictionnary should have
-                                the form {'variable': str, 'init_value': float, 'scan_to_perform': np.array}. This format can be obtained
-                                by using the format_dict_to_scan method included in this tookbox.
+        madx (Madx): running cpymad MAD-X instance (the one that you are using)
+        parameter_space (ScanConfig): ScanConfig containing the information regarding the scan you are performing. This ScanConfig should have
+                                the form {'variable': str, 'init_value': float, 'scan_to_perform': np.array}, as defined in the Data Class above. 
         madx_output_file (Union[str, Path]): Path to the MAD-X output file. Can be a string, in which case it will be converted to a Path 
                                                 object first.
+        tol_closed_machine (float): tolerance to be used when checking if the machine is closed (default to 1e-3 [m]) 
         
     
     Returns: 
@@ -120,7 +120,8 @@ def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_outpu
         LOGGER.debug(f"Attempting emittance calculation for value of {param_value:.5f}")
         madx.globals[parameter_space.variable_name] = param_value
         try:
-            madx.command.twiss()
+            madx.twiss()
+            check_closed_machine(madx, tol=tol_closed_machine)
             madx.command.emit(deltap=madx.globals.deltap)
             madx.command.emit(deltap=madx.globals.deltap)
             ex, ey, ez = get_emittances_from_madx_output(madx_output_file, to_meters=True)
@@ -128,7 +129,12 @@ def scan_param_for_emittance(madx: Madx, parameter_space: ScanConfig, madx_outpu
             ey_res.append(ey)
             ez_res.append(ez)
         except TwissFailed:
-            LOGGER.debug(f"Twiss failed for this configuration, defaulting to NaN and skipping ahead.")
+            LOGGER.debug("Twiss failed for this configuration, defaulting to NaN and skipping ahead.")
+            ex_res.append(np.nan)
+            ey_res.append(np.nan)
+            ez_res.append(np.nan)
+        except AssertionError:
+            LOGGER.debug("Machine not closed for this configuration, defaulting to NaN and skipping ahead.")
             ex_res.append(np.nan)
             ey_res.append(np.nan)
             ez_res.append(np.nan)
